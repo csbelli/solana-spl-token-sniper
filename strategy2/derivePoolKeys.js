@@ -12,22 +12,20 @@ const openbookProgramId = new web3.PublicKey('srmqPvymJeFKQ4zGQed1GFppgkRHL9kaEL
 const rayProgram = new web3.PublicKey('675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8');
 const myAccount = new web3.PublicKey(config.ownerAddress);
 
-async function derivePoolKeys(id){
-    console.log(id);
+async function derivePoolKeys(id, marketDeco){
     const marketId = new web3.PublicKey(id);
-
-    const marketInfo = await getMarketInfo(marketId);
-    const marketDeco = await getDecodedData(marketInfo);
+    //const marketDeco = await getDecodedData(marketInfo);
+    //console.log("Token Address: ", marketDeco.baseMint);
 
     const baseMint = marketDeco.baseMint;
     const baseMintData = await getMintData(baseMint);
     const baseDecimals = await getDecimals(baseMintData);
-    const ownerBaseAta = await getOwnerAta(baseMint, myAccount);
+    //const ownerBaseAta = await getOwnerAta(baseMint, myAccount);
     
     const quoteMint = marketDeco.quoteMint;
     const quoteMintData = await getMintData(quoteMint);
     const quoteDecimals = await getDecimals(quoteMintData);
-    const ownerQuoteAta = await getOwnerAta(quoteMint, myAccount);
+    //const ownerQuoteAta = await getOwnerAta(quoteMint, myAccount);
 
     const authority = (raydium_sdk_1.findProgramAddress([Buffer.from([97, 109, 109, 32, 97, 117, 116, 104, 111, 114, 105, 116, 121])], rayProgram))['publicKey'];
     // const marketAuthority = getVaultSigner(marketId, marketDeco);
@@ -53,7 +51,6 @@ async function derivePoolKeys(id){
         lpVault: new web3.PublicKey('11111111111111111111111111111111'),
         marketVersion: 3,
         marketProgramId: openbookProgramId,
-        // marketProgramId: new web3.PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'),
         marketId: marketId,
         marketAuthority: raydium_sdk_1.Market.getAssociatedAuthority({ programId: new web3.PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'), marketId: marketId }).publicKey,
         marketBaseVault: marketDeco.baseVault,
@@ -71,11 +68,6 @@ async function derivePoolKeys(id){
 }
 exports.derivePoolKeys = derivePoolKeys;
 
-async function getMarketInfo(marketId){
-    const marketInfo = await connection.getAccountInfo(marketId);
-    return marketInfo;
-}
-
 async function getDecodedData(marketInfo){
     return await Market.getLayout(openbookProgramId).decode(marketInfo.data);
 }
@@ -88,13 +80,14 @@ async function getDecimals(mintData){
     return raydium_sdk_1.SPL_MINT_LAYOUT.decode(mintData.data).decimals;
 }
 
-async function getOwnerAta(mint, publicKey){
-    const foundAta = web3.PublicKey.findProgramAddressSync([publicKey.toBuffer(), spl.TOKEN_PROGRAM_ID.toBuffer(), mint.toBuffer()], spl.ASSOCIATED_TOKEN_PROGRAM_ID)[0];
-    return foundAta;
-}
+//async function getOwnerAta(mint, publicKey){
+//    const foundAta = web3.PublicKey.findProgramAddressSync([publicKey.toBuffer(), spl.TOKEN_PROGRAM_ID.toBuffer(), mint.toBuffer()], spl.ASSOCIATED_TOKEN_PROGRAM_ID)[0];
+//    return foundAta;
+//}
 
-function getVaultSigner(marketId, marketDeco){
-    const seeds = [marketId.toBuffer()];
-    const seedsWithNonce = seeds.concat(Buffer.from([Number(marketDeco.vaultSignerNonce.toString())]), Buffer.alloc(7));
-    return web3.PublicKey.createProgramAddressSync(seedsWithNonce, openbookProgramId);
-}
+//function getVaultSigner(marketId, marketDeco){
+//    const seeds = [marketId.toBuffer()];
+//    const seedsWithNonce = seeds.concat(Buffer.from([Number(marketDeco.vaultSignerNonce.toString())]), Buffer.alloc(7));
+//    return web3.PublicKey.createProgramAddressSync(seedsWithNonce, openbookProgramId);
+//}
+

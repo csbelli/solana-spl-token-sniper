@@ -13,6 +13,7 @@ exports.sleepTime = exports.getATAAddress = exports.buildAndSendTx = exports.get
 const raydium_sdk_1 = require("@raydium-io/raydium-sdk");
 const web3_js_1 = require("@solana/web3.js");
 const config_1 = require("./config");
+
 function sendTx(connection, payer, txs, options) {
     return __awaiter(this, void 0, void 0, function* () {
         const txids = [];
@@ -29,6 +30,7 @@ function sendTx(connection, payer, txs, options) {
     });
 }
 exports.sendTx = sendTx;
+
 function getWalletTokenAccount(connection, wallet) {
     return __awaiter(this, void 0, void 0, function* () {
         const walletTokenAccount = yield connection.getTokenAccountsByOwner(wallet, {
@@ -42,6 +44,7 @@ function getWalletTokenAccount(connection, wallet) {
     });
 }
 exports.getWalletTokenAccount = getWalletTokenAccount;
+
 function buildAndSendTx(innerSimpleV0Transaction, options) {
     return __awaiter(this, void 0, void 0, function* () {
         const willSendTx = yield (0, raydium_sdk_1.buildSimpleTransaction)({
@@ -55,11 +58,41 @@ function buildAndSendTx(innerSimpleV0Transaction, options) {
     });
 }
 exports.buildAndSendTx = buildAndSendTx;
+
 function getATAAddress(programId, owner, mint) {
     const { publicKey, nonce } = (0, raydium_sdk_1.findProgramAddress)([owner.toBuffer(), programId.toBuffer(), mint.toBuffer()], new web3_js_1.PublicKey("ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"));
     return { publicKey, nonce };
 }
 exports.getATAAddress = getATAAddress;
+
+function getSolanaPriceInUSDC() {
+    return __awaiter(this, void 0, void 0, function* () {
+        const accountInfo = yield config_1.connection.getAccountInfo(new web3.PublicKey("8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj"));
+
+        const poolData = raydium_sdk_1.PoolInfoLayout.decode(accountInfo.data);
+        const priceInUSDC = raydium_sdk_1.SqrtPriceMath.sqrtPriceX64ToPrice(poolData.sqrtPriceX64, poolData.mintDecimalsA, poolData.mintDecimalsB).toFixed(2);
+        console.log('current price -> ', priceInUSDC);
+
+        return priceInUSDC;
+    });
+}
+exports.getSolanaPriceInUSDC = getSolanaPriceInUSDC;
+
+function checkMintAuthorityRevoked(tokenAddress) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const tokenInfo = yield config_1.connection.getParsedAccountInfo(new web3_js_1.PublicKey(tokenAddress));
+        console.log("tokenInfo: ", tokenInfo);
+        console.log("data parsed: ", tokenInfo.value.data.parsed);
+        console.log("mint authority revoked check: ", tokenInfo.value.data.parsed.info.mintAuthority);
+        if (tokenInfo.value.data.parsed.info.mintAuthority === null) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+}
+exports.checkMintAuthorityRevoked = checkMintAuthorityRevoked;
+
 function sleepTime(ms) {
     return __awaiter(this, void 0, void 0, function* () {
         console.log((new Date()).toLocaleString(), 'sleepTime', ms);
