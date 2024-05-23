@@ -5,14 +5,15 @@ const util_1 = require("../utils/util.js");
 const {Market} = require('@openbook-dex/openbook');
 const { info } = require('console');
 const derivePoolKeys = require('./derivePoolKeys.js');
-const openbookProgramId = new web3.PublicKey('srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX');
+const logger = require('../logger.js');
 
+const openbookProgramId = new web3.PublicKey('srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX');
 const connection = config.connection;
 
 //tryCode("3MsMCSEoeuJrrnwAkfepNeC5AsrFkps4zKKFAQSRmKtY");
 //decimalTest("99p7VwKhHsKEmCmEDQFfED27p6FotRJTPNdngyKbqXdo");
-//getSolanaPrice();
-getLPData("HYwNHiwqAnCZHgWQZzprkuFWmzcE26MAiHPcWH6zBKXq");
+getSolanaPrice();
+//getLPData("HYwNHiwqAnCZHgWQZzprkuFWmzcE26MAiHPcWH6zBKXq");
 
 async function tryCode(marketId) {
     const keyData = await connection.getAccountInfo(new web3.PublicKey(marketId));
@@ -57,7 +58,8 @@ async function getSolanaPrice(){
 
     const poolData = raydium_sdk_1.PoolInfoLayout.decode(accountInfo.data);
 
-    console.log('current price -> ', raydium_sdk_1.SqrtPriceMath.sqrtPriceX64ToPrice(poolData.sqrtPriceX64, poolData.mintDecimalsA, poolData.mintDecimalsB).toFixed(2));
+    //console.log('current price -> ', raydium_sdk_1.SqrtPriceMath.sqrtPriceX64ToPrice(poolData.sqrtPriceX64, poolData.mintDecimalsA, poolData.mintDecimalsB).toFixed(2));
+    logger.info({"Current SOL Price: ":raydium_sdk_1.SqrtPriceMath.sqrtPriceX64ToPrice(poolData.sqrtPriceX64, poolData.mintDecimalsA, poolData.mintDecimalsB).toFixed(2)});
 }
 
 async function getLPData(marketId){
@@ -65,7 +67,7 @@ async function getLPData(marketId){
     const marketDeco = await getDecodedData(keyData);
 
     const poolKeys = await derivePoolKeys.derivePoolKeys(marketId, marketDeco);
-    console.log("Pool Keys:", poolKeys);
+    logger.info({"Pool Keys:":[poolKeys]}, "Pool Keys");
 
     const data = await connection
         .getAccountInfo(new web3.PublicKey(poolKeys.id))
