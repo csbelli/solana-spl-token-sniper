@@ -13,6 +13,7 @@ exports.sleepTime = exports.getATAAddress = exports.buildAndSendTx = exports.get
 const raydium_sdk_1 = require("@raydium-io/raydium-sdk");
 const web3_js_1 = require("@solana/web3.js");
 const config_1 = require("./config");
+const logger = require('../logger.js');
 
 function sendTx(connection, payer, txs, options) {
     return __awaiter(this, void 0, void 0, function* () {
@@ -67,11 +68,11 @@ exports.getATAAddress = getATAAddress;
 
 function getSolanaPriceInUSDC() {
     return __awaiter(this, void 0, void 0, function* () {
-        const accountInfo = yield config_1.connection.getAccountInfo(new web3.PublicKey("8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj"));
+        const accountInfo = yield config_1.connection.getAccountInfo(new web3_js_1.PublicKey("8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj"));
 
         const poolData = raydium_sdk_1.PoolInfoLayout.decode(accountInfo.data);
         const priceInUSDC = raydium_sdk_1.SqrtPriceMath.sqrtPriceX64ToPrice(poolData.sqrtPriceX64, poolData.mintDecimalsA, poolData.mintDecimalsB).toFixed(2);
-        console.log('current price -> ', priceInUSDC);
+        logger.info({"current price" : priceInUSDC}, "Current SOL Price in USD");
 
         return priceInUSDC;
     });

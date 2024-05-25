@@ -6,6 +6,7 @@ const swap = require('./swap2.js');
 const config = require('../utils/config.js');
 const util_1 = require("../utils/util.js");
 const {Market} = require('@openbook-dex/openbook');
+const logger = require('../logger.js');
 
 // OpenBook
 // Program srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX
@@ -19,30 +20,8 @@ let ws = null;
 
 openWebSocket();
 
-/*const ws = new WebSocket(config.websocketConnection)
-    ws.onopen = () => {
-        ws.send(
-            JSON.stringify({
-                jsonrpc: '2.0',
-                id: 1,
-                method: 'blockSubscribe',
-                params: [{"mentionsAccountOrProgram": openbookProgramId}, {"commitment": "confirmed", "maxSupportedTransactionVersion": 0, "encoding": "jsonParsed"}]
-            })
-        )
-    }*/
-
-/*ws.on('message', (evt) => {
-    try {
-        const buffer = evt.toString('utf8');
-        parseTxs(JSON.parse(buffer));
-        return;
-    } catch (e) {
-        console.log(e)
-    }
-})*/
-
 function openWebSocket(){
-    console.log("Opening WebSocket");
+    logger.info("Opening WebSocket");
     ws = new WebSocket(config.websocketConnection)
     ws.onopen = () => {
         ws.send(
@@ -68,17 +47,17 @@ function openWebSocket(){
 
 function parseTxs(txsFromBlock){
     if(txsFromBlock.params === undefined){
-        console.log("txsFromblock is undefined.")
+        logger.info("txsFromblock is undefined.")
         return;
     }
     
     const allTx = txsFromBlock.params.result.value.block.transactions;
     for(const tx of allTx){
         if(parseLogs(tx.meta.logMessages) && tx.transaction.message.accountKeys.length === 13 && tx.transaction.message.instructions.length === 6){
-            console.log("txsFromBlock found.")
+            logger.info("txsFromBlock found.")
             if(ws.readyState === ws.OPEN){
                 ws.close();
-                console.log("Closing websocket.")
+                logger.info("Closing websocket.")
             }
             
             //console.log("Current Solana Price:", util_1.getSolanaPriceInUSDC(connection));
@@ -102,12 +81,11 @@ async function parseAccountKeys(keys, signature){
     let marketInfo = null;
 
     for(const key of keys){
-        //console.log("Key:", key);
         const keyData = await connection.getAccountInfo(new web3.PublicKey(key.pubkey));
         if(keyData !== null && keyData.data.length === 388){
             marketId = key.pubkey;
             marketInfo = keyData;
-            console.log("Key with marketId:", key);
+            logger.info({"Key with marketId: " : key}, "MarketID Key");
             
             //If we are in here we have what we need so break out of the loop.
             break;
@@ -117,8 +95,8 @@ async function parseAccountKeys(keys, signature){
     if(marketId === null){
         parseAccountKeys(keys);
     } else{
-        console.log("Found Time: ", new Date().toLocaleString());
-        console.log("MarketID: ", marketId);
+        logger.info({"Found Time: " : new Date().toLocaleString()}, "Found");
+        logger.info({"MarketID: " : marketId}, "MarketID");
 
         const marketDeco = await getDecodedData(marketInfo);
 
@@ -128,7 +106,7 @@ async function parseAccountKeys(keys, signature){
             tokenAddress = marketDeco.quoteMint;
         }
 
-        console.log("Token Address: ", tokenAddress.toString());
+        logger.info({"Token Address: " : tokenAddress.toString()}, "Token Address");
 
         // tokenInfo.value.data.parsed includes: info, type (ex. mint)
         // tokenInfo.value.data.parsed.info includes: decimals, freezeAuthority, isInitialized, mintAuthority, supply
@@ -136,7 +114,7 @@ async function parseAccountKeys(keys, signature){
         
         // Verify the token has "mint authority revoked"
         if (tokenInfo.value.data.parsed.info.mintAuthority !== null) {
-            console.log("Mint authority is not revoked.");
+            logger.info("Mint authority is not revoked.");
 
             if(ws.readyState === ws.CLOSED){
                 openWebSocket();
@@ -144,12 +122,12 @@ async function parseAccountKeys(keys, signature){
 
             return;
         } else {
-            console.log("Mint authority is revoked.");
+            logger.info("Mint authority is revoked.");
         }
         
         // Verify the token has "freeze authority revoked"
         if (tokenInfo.value.data.parsed.info.freezeAuthority !== null) {
-            console.log("Freeze authority is not revoked.");
+            logger.info("Freeze authority is not revoked.");
 
             if(ws.readyState === ws.CLOSED){
                 openWebSocket();
@@ -157,12 +135,12 @@ async function parseAccountKeys(keys, signature){
 
             return;
         } else {
-            console.log("Freeze authority is revoked.");
+            logger.info("Freeze authority is revoked.");
         }
 
         //It seems initial supply of 100M seems to have better initial growth than an intitial supply of 1B
         const getTokenSupply = await connection.getTokenSupply(new web3.PublicKey(tokenAddress));
-        console.log("Supply: ", getTokenSupply.value.uiAmount);
+        logger.info({"Supply: " : getTokenSupply.value.uiAmount}, "Token Supply");
         /*if(getTokenSupply.value.uiAmount > 100000000){
             console.log("Supply is > 100M");
 
@@ -185,16 +163,39 @@ async function parseAccountKeys(keys, signature){
         //check immediately after the buy and if the value is ouside the range, just sell and restart the socket.
         
         const poolKeys = await derivePoolKeys.derivePoolKeys(marketId, marketDeco);
-        console.log("Pool Keys:", poolKeys);
+        logger.info({"Pool Keys:" : [poolKeys]}, "Pool Keys");
 
         //Using poolKeys.id.toString(), the poolOpenTime can be returned. If the open time is more than a few minutes in the
         //future, schedule the buy for just before that time.
-        const lpData = await connection
-            .getAccountInfo(new web3.PublicKey(poolKeys.id))
-            .then((info) => raydium_sdk_1.LIQUIDITY_STATE_LAYOUT_V4.decode(info.data));
+        const info = await connection.getAccountInfo(new web3.PublicKey(poolKeys.id));
 
-        console.log("Pool Open Time: ", new Date(Number(lpData.poolOpenTime.toString() * 1000)));
+        if (info !== null){
+            lpDecoded = await raydium_sdk_1.LIQUIDITY_STATE_LAYOUT_V4.decode(info.data);
+        } else {
+            // May want to loop for 5 minutes to snipe if LP is null
+            logger.info("LP Info is NULL");
 
+            if(ws.readyState === ws.CLOSED){
+                openWebSocket();
+            }
+
+            return;
+        }
+        
+        if (lpDecoded !== null){
+            logger.info({"Pool Open Time" : new Date(Number(lpDecoded.poolOpenTime.toString() * 1000))}, "Pool Open Time");
+            logger.info({"Decoded LP Data" : [lpDecoded]}, "Decoded LP Data");
+            logger.info({"maxOrder" : lpDecoded.maxOrder.toString()}, "Max LP Order");
+            logger.info({"minSize" : lpDecoded.minSize.toString()}, "Min LP Size");
+
+            const lpMintAccInfo = await connection.getParsedAccountInfo(new web3.PublicKey(lpDecoded.lpMint));
+            const mintInfo = lpMintAccInfo?.value?.data?.parsed?.info;
+
+            logger.info({"mintInfo" : [mintInfo]}, "Mint Info");
+        }
+        
+        //If pool open time is more than 5 minutes from now, log info for scheduled snipe buy.
+        logger.info("Time to buy Meme");
         swap.swapSolForMeme(poolKeys, signature);
     }
 }

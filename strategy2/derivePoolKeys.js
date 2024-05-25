@@ -3,6 +3,7 @@ const raydium_sdk_1 = require("@raydium-io/raydium-sdk");
 const spl = require('@solana/spl-token');
 const {Market} = require('@openbook-dex/openbook');
 const config = require('../utils/config.js');
+const logger = require('../logger.js');
 
 const connection = config.connection;
 
@@ -67,10 +68,6 @@ async function derivePoolKeys(id, marketDeco){
     return poolKeys;
 }
 exports.derivePoolKeys = derivePoolKeys;
-
-async function getDecodedData(marketInfo){
-    return await Market.getLayout(openbookProgramId).decode(marketInfo.data);
-}
 
 async function getMintData(mint){
     return await connection.getAccountInfo(mint);
