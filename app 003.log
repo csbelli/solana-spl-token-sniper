@@ -1,0 +1,890 @@
+{"level":30,"time":"2024-05-30T19:20:44.365Z","pid":25372,"hostname":"XBMCServer","msg":"Opening WebSocket"}
+{"level":30,"time":"2024-05-30T19:20:44.631Z","pid":25372,"hostname":"XBMCServer","msg":"txsFromblock is undefined."}
+{"level":30,"time":"2024-05-30T19:25:10.073Z","pid":25372,"hostname":"XBMCServer","msg":"txsFromBlock found."}
+{"level":30,"time":"2024-05-30T19:25:10.075Z","pid":25372,"hostname":"XBMCServer","msg":"Closing websocket."}
+{"level":30,"time":"2024-05-30T19:25:25.092Z","pid":25372,"hostname":"XBMCServer","Key with marketId: ":{"pubkey":"ApQfnLotr2YvqxkRNjjhvgZKLqhP24BGk2SyQqPWNjoz","writable":true,"signer":true,"source":"transaction"},"msg":"MarketID Key"}
+{"level":30,"time":"2024-05-30T19:25:25.118Z","pid":25372,"hostname":"XBMCServer","Found Time: ":"5/30/2024, 2:25:25 PM","msg":"Found"}
+{"level":30,"time":"2024-05-30T19:25:25.118Z","pid":25372,"hostname":"XBMCServer","MarketID: ":"ApQfnLotr2YvqxkRNjjhvgZKLqhP24BGk2SyQqPWNjoz","msg":"MarketID"}
+{"level":30,"time":"2024-05-30T19:25:25.627Z","pid":25372,"hostname":"XBMCServer","Token Address: ":"617xw68vN7uBoqkL6iCvDv8Vw3GD7HJKVoF42WUxmFq7","msg":"Token Address"}
+{"level":30,"time":"2024-05-30T19:25:26.158Z","pid":25372,"hostname":"XBMCServer","msg":"Mint authority is not revoked."}
+{"level":30,"time":"2024-05-30T19:25:26.158Z","pid":25372,"hostname":"XBMCServer","msg":"Opening WebSocket"}
+{"level":30,"time":"2024-05-30T19:25:26.286Z","pid":25372,"hostname":"XBMCServer","msg":"txsFromblock is undefined."}
+{"level":30,"time":"2024-05-30T19:30:10.441Z","pid":25372,"hostname":"XBMCServer","msg":"txsFromBlock found."}
+{"level":30,"time":"2024-05-30T19:30:10.441Z","pid":25372,"hostname":"XBMCServer","msg":"Closing websocket."}
+{"level":30,"time":"2024-05-30T19:30:31.656Z","pid":25372,"hostname":"XBMCServer","Key with marketId: ":{"pubkey":"8tWfLYSj76KYmNVptKLsHSw5mb7P3tDYsCEUsRteEKn7","writable":true,"signer":false,"source":"transaction"},"msg":"MarketID Key"}
+{"level":30,"time":"2024-05-30T19:30:31.656Z","pid":25372,"hostname":"XBMCServer","Found Time: ":"5/30/2024, 2:30:31 PM","msg":"Found"}
+{"level":30,"time":"2024-05-30T19:30:31.656Z","pid":25372,"hostname":"XBMCServer","MarketID: ":"8tWfLYSj76KYmNVptKLsHSw5mb7P3tDYsCEUsRteEKn7","msg":"MarketID"}
+{"level":30,"time":"2024-05-30T19:30:32.160Z","pid":25372,"hostname":"XBMCServer","msg":"Token has SOL address for baseMint. Skipping Token."}
+{"level":30,"time":"2024-05-30T19:30:32.160Z","pid":25372,"hostname":"XBMCServer","msg":"Opening WebSocket"}
+{"level":30,"time":"2024-05-30T19:30:32.261Z","pid":25372,"hostname":"XBMCServer","msg":"txsFromblock is undefined."}
+{"level":30,"time":"2024-05-30T19:31:43.872Z","pid":25372,"hostname":"XBMCServer","msg":"txsFromBlock found."}
+{"level":30,"time":"2024-05-30T19:31:43.873Z","pid":25372,"hostname":"XBMCServer","msg":"Closing websocket."}
+{"level":30,"time":"2024-05-30T19:31:58.211Z","pid":25372,"hostname":"XBMCServer","Key with marketId: ":{"pubkey":"36v7vPH7VXSYVfaD83t7Ck8Bdx1Ee6KaLmeTkobR9jB6","writable":true,"signer":true,"source":"transaction"},"msg":"MarketID Key"}
+{"level":30,"time":"2024-05-30T19:31:58.211Z","pid":25372,"hostname":"XBMCServer","Found Time: ":"5/30/2024, 2:31:58 PM","msg":"Found"}
+{"level":30,"time":"2024-05-30T19:31:58.211Z","pid":25372,"hostname":"XBMCServer","MarketID: ":"36v7vPH7VXSYVfaD83t7Ck8Bdx1Ee6KaLmeTkobR9jB6","msg":"MarketID"}
+{"level":30,"time":"2024-05-30T19:31:58.718Z","pid":25372,"hostname":"XBMCServer","Token Address: ":"AHLgYoaju424dTEHpswK5toPzH1Wmi7asgxegyXeLDhb","msg":"Token Address"}
+{"level":30,"time":"2024-05-30T19:31:59.256Z","pid":25372,"hostname":"XBMCServer","msg":"Mint authority is revoked."}
+{"level":30,"time":"2024-05-30T19:31:59.256Z","pid":25372,"hostname":"XBMCServer","msg":"Freeze authority is revoked."}
+{"level":30,"time":"2024-05-30T19:31:59.868Z","pid":25372,"hostname":"XBMCServer","Pool Keys:":[{"id":"3SjTmDH2meuNFKB7HUSwrBLGX2MHCvjheRj6AvbsWGTY","baseMint":"AHLgYoaju424dTEHpswK5toPzH1Wmi7asgxegyXeLDhb","quoteMint":"So11111111111111111111111111111111111111112","lpMint":"8myWVi7KwMjFe9Jsu6ss8U1dRp2KxiQx8wevanancQ13","baseDecimals":9,"quoteDecimals":9,"lpDecimals":9,"version":4,"programId":"675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8","authority":"5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","openOrders":"2JVyFhTM99KJG9J18hmnREnN4EqXfEsCN8YAnWB1P6wK","targetOrders":"5wUsM9CFAYdEE58KahDN6yqeQKUrLyQeKRXtErfjdpL9","baseVault":"5nyaU8xsCV7p1ZS4BPn85EsMN9Usqogb3pTjwsEdr3aE","quoteVault":"7XDKDNe7eGDTVaDnca4vLnfRfYgESkjjJFA68TBF5rTe","withdrawQueue":"11111111111111111111111111111111","lpVault":"11111111111111111111111111111111","marketVersion":3,"marketProgramId":"srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX","marketId":"36v7vPH7VXSYVfaD83t7Ck8Bdx1Ee6KaLmeTkobR9jB6","marketAuthority":"ELFAmWMdKwHAesbdemSBi1prCmPxmhCu4NHTpreN4QLF","marketBaseVault":"Gwv8VeMN1VSoQrbS6VTDzTYoHtFPVxUifKuXdzMCs1AF","marketQuoteVault":"AwPtkeWoyvc6n1ES7gG3t3pcktLVFmq4C3RMFyTGbAuE","marketBids":"D9HjV5symADCsxo3YtW8FhL1tZCPBMnAcdtRxJTyy5k3","marketAsks":"Du2T7bEBB2axmNnRLByayFXi8T3QYwCjp8LnQZX9MDM8","marketEventQueue":"AmZm7vL8rkPeUkY9eoPZ7GXipqdDZp82sfWsHRCd5uLg","lookupTableAccount":"11111111111111111111111111111111"}],"msg":"Pool Keys"}
+{"level":30,"time":"2024-05-30T19:32:06.195Z","pid":25372,"hostname":"XBMCServer","msg":"LP info is null, trying to snipe launch"}
+{"level":30,"time":"2024-05-30T19:32:06.195Z","pid":25372,"hostname":"XBMCServer","msg":"Time to buy Meme"}
+{"level":30,"time":"2024-05-30T19:32:06.196Z","pid":25372,"hostname":"XBMCServer","msg":"Opening WebSocket"}
+{"level":30,"time":"2024-05-30T19:32:06.307Z","pid":25372,"hostname":"XBMCServer","msg":"txsFromblock is undefined."}
+{"level":30,"time":"2024-05-30T19:32:06.458Z","pid":25372,"hostname":"XBMCServer","Attempted Tx":["2b5sSpTi3C1Vgnirfmo4WFvTAgRum6fnFhLpEsL4cXVknAPoT6EZj3mvycwemrb6CynM6YVyEYLbLNYyrHowqVJY"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T19:32:07.035Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:09.592Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:12.140Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:14.686Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:17.236Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:19.783Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:22.332Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:24.896Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:27.443Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:29.993Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:32.545Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:35.093Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:37.644Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:40.206Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:42.752Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:45.301Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:47.849Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:50.399Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:52.947Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:55.497Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:32:58.045Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:00.589Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:03.139Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:05.688Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:08.239Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:10.795Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:13.353Z","pid":25372,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":67.002,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T19:33:13.354Z","pid":25372,"hostname":"XBMCServer","Swap Sol for Meme txids":[["2b5sSpTi3C1Vgnirfmo4WFvTAgRum6fnFhLpEsL4cXVknAPoT6EZj3mvycwemrb6CynM6YVyEYLbLNYyrHowqVJY","expired"]],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T19:33:13.354Z","pid":25372,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T19:33:13.489Z","pid":25372,"hostname":"XBMCServer","Attempted Tx":["4nQwVvkKCjzHvvaBq1LSpa83fKgHttEQUTaic1gqQHnBoqUt91uCEZXY6sZ6pyr3A9H87JzGWZuPg7PG5au19Nca"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T19:33:15.087Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:17.644Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:20.194Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:22.743Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:25.291Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:27.850Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:30.402Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:32.952Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:35.502Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:38.049Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:40.604Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:43.158Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:45.711Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:48.260Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:50.809Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:53.355Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:55.901Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:33:58.454Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:01.004Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:03.029Z","pid":25372,"hostname":"XBMCServer","msg":"txsFromBlock found."}
+{"level":30,"time":"2024-05-30T19:34:03.030Z","pid":25372,"hostname":"XBMCServer","msg":"Closing websocket."}
+{"level":30,"time":"2024-05-30T19:34:03.554Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:06.103Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:08.660Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:11.213Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:13.760Z","pid":25372,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":60.321,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T19:34:13.760Z","pid":25372,"hostname":"XBMCServer","Swap Sol for Meme txids":[["4nQwVvkKCjzHvvaBq1LSpa83fKgHttEQUTaic1gqQHnBoqUt91uCEZXY6sZ6pyr3A9H87JzGWZuPg7PG5au19Nca","expired"]],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T19:34:13.760Z","pid":25372,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T19:34:14.453Z","pid":25372,"hostname":"XBMCServer","Attempted Tx":["27AU4LbFWPfw52v7GeJ2r4Q3feJq8vQg1mE94TABFV2iaM7XXsAbkqEBGXSVEsgxL2HV7BuXp5vUtNqzL36h7fmi"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T19:34:15.027Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:17.575Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:20.122Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:22.667Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:25.222Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:25.266Z","pid":25372,"hostname":"XBMCServer","Key with marketId: ":{"pubkey":"8u23W2XVQAXUNVMKob7A7MHb6oyEG2dWNDJjhhjQDqJi","writable":true,"signer":true,"source":"transaction"},"msg":"MarketID Key"}
+{"level":30,"time":"2024-05-30T19:34:25.266Z","pid":25372,"hostname":"XBMCServer","Found Time: ":"5/30/2024, 2:34:25 PM","msg":"Found"}
+{"level":30,"time":"2024-05-30T19:34:25.266Z","pid":25372,"hostname":"XBMCServer","MarketID: ":"8u23W2XVQAXUNVMKob7A7MHb6oyEG2dWNDJjhhjQDqJi","msg":"MarketID"}
+{"level":30,"time":"2024-05-30T19:34:25.769Z","pid":25372,"hostname":"XBMCServer","Token Address: ":"CZR7QgmRodkFMZV6tY8JJH8gRdXh4vLpYXGWWxq3o5f4","msg":"Token Address"}
+{"level":30,"time":"2024-05-30T19:34:26.305Z","pid":25372,"hostname":"XBMCServer","msg":"Mint authority is revoked."}
+{"level":30,"time":"2024-05-30T19:34:26.305Z","pid":25372,"hostname":"XBMCServer","msg":"Freeze authority is revoked."}
+{"level":30,"time":"2024-05-30T19:34:26.864Z","pid":25372,"hostname":"XBMCServer","Pool Keys:":[{"id":"CUYFPFqtzyXmLFhPkeESfauRZyhdknUt292HoHP6XBx8","baseMint":"CZR7QgmRodkFMZV6tY8JJH8gRdXh4vLpYXGWWxq3o5f4","quoteMint":"So11111111111111111111111111111111111111112","lpMint":"2JphFCZJ1SJQsJjDq6HxZTR1krETbdG88wxptXCzcr9n","baseDecimals":9,"quoteDecimals":9,"lpDecimals":9,"version":4,"programId":"675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8","authority":"5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","openOrders":"2S7t531MhwPKLue4L8h86sQpch3Je8gePkBsTF8EWH8N","targetOrders":"EbHLUMVCJZgGbBhQL19GWG5qTDvQiWFKjpMS3SEs5ZW6","baseVault":"8bN3gyD7hXFwP7BbVY6BwDLQqSgEvsyACwSCWM1ezvPK","quoteVault":"BVD6z6RjPgEz18pRCNb1L9dyvE5RyuEb7f2tdV1Tpght","withdrawQueue":"11111111111111111111111111111111","lpVault":"11111111111111111111111111111111","marketVersion":3,"marketProgramId":"srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX","marketId":"8u23W2XVQAXUNVMKob7A7MHb6oyEG2dWNDJjhhjQDqJi","marketAuthority":"AFefVq2uZjcTaHH78HmcTFDerGuqymsr9Fzn7JAuE4nT","marketBaseVault":"7QqLRh8oMmQHErk2Dv1XtdibszjNDXvmMVBMu3TB9Xhf","marketQuoteVault":"7DRr7jUERPkXLKqD8uMyCrzafSMiu4wcFAARGLvjeq37","marketBids":"2tPfJBKTSTYrLvCqUNFPMmpWmng1XswUDbfoW7V44TLV","marketAsks":"FsoBK6np2upSnZqqX6E72C1NBHKeAi6jQGKfoz23qvwn","marketEventQueue":"993g4cA1NzzhrCi7KM5Kn7yXHzWEgy7dWoJWWrBgyXK8","lookupTableAccount":"11111111111111111111111111111111"}],"msg":"Pool Keys"}
+{"level":30,"time":"2024-05-30T19:34:27.775Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:30.319Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:32.875Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:33.197Z","pid":25372,"hostname":"XBMCServer","msg":"LP info is null, trying to snipe launch"}
+{"level":30,"time":"2024-05-30T19:34:33.197Z","pid":25372,"hostname":"XBMCServer","msg":"Time to buy Meme"}
+{"level":30,"time":"2024-05-30T19:34:33.197Z","pid":25372,"hostname":"XBMCServer","msg":"Opening WebSocket"}
+{"level":30,"time":"2024-05-30T19:34:33.317Z","pid":25372,"hostname":"XBMCServer","msg":"txsFromblock is undefined."}
+{"level":30,"time":"2024-05-30T19:34:33.886Z","pid":25372,"hostname":"XBMCServer","Attempted Tx":["2CNhSpk8XqbcyX2mdCBR8P5aTJ2NQbFUmURmBpufz39sVP73XcoE4xDNsLKwc9LPVG5pcx5uHyph3wPPmV74Hw9u"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T19:34:33.929Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:35.437Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:36.480Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:37.994Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:39.036Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:40.548Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:41.591Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:43.097Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:44.135Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:45.649Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:46.684Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:48.197Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:49.229Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:50.744Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:51.784Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:53.295Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:54.344Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:55.847Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:56.908Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:58.391Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:34:59.452Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:00.943Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:02.000Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:03.490Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:04.555Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:06.050Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:07.108Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:08.597Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:09.666Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:11.148Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:12.214Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:13.702Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:14.770Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:16.257Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:17.326Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:18.806Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:19.874Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:21.352Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:22.422Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:23.909Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:24.982Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:26.468Z","pid":25372,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":72.618,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T19:35:26.468Z","pid":25372,"hostname":"XBMCServer","Swap Sol for Meme txids":[["27AU4LbFWPfw52v7GeJ2r4Q3feJq8vQg1mE94TABFV2iaM7XXsAbkqEBGXSVEsgxL2HV7BuXp5vUtNqzL36h7fmi","expired"]],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T19:35:26.469Z","pid":25372,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T19:35:26.671Z","pid":25372,"hostname":"XBMCServer","Attempted Tx":["2kZxfgADe89e33CPi7FW9YLmUNufugpGXzsXnHMzJxXaK55euD3LBDJyiaLTYx2X4Pi3M4ESeU61m9wEdWKqj1TN"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T19:35:27.246Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:27.538Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:29.792Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:30.085Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:32.337Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:32.647Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:34.883Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:35.199Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:37.429Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:37.742Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:39.987Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:40.293Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:42.545Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:42.847Z","pid":25372,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":69.559,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T19:35:42.847Z","pid":25372,"hostname":"XBMCServer","Swap Sol for Meme txids":[["2CNhSpk8XqbcyX2mdCBR8P5aTJ2NQbFUmURmBpufz39sVP73XcoE4xDNsLKwc9LPVG5pcx5uHyph3wPPmV74Hw9u","expired"]],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T19:35:42.847Z","pid":25372,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T19:35:43.557Z","pid":25372,"hostname":"XBMCServer","Attempted Tx":["tv4Lz9f3rKMUeMFxtzodc6ozyaEi1WWHsGUHx8TvtZoe8AKThc8i2UjQrxQHgmM4TbyrUZpQmycp9rWStDEhrni"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T19:35:43.599Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:45.096Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:46.149Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:47.648Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:48.696Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:50.202Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:51.247Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:52.760Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:53.800Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:55.305Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:56.352Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:57.867Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:35:58.902Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:00.410Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:01.449Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:02.958Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:03.996Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:05.517Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:06.553Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:07.959Z","pid":25372,"hostname":"XBMCServer","msg":"txsFromBlock found."}
+{"level":30,"time":"2024-05-30T19:36:07.960Z","pid":25372,"hostname":"XBMCServer","msg":"Closing websocket."}
+{"level":30,"time":"2024-05-30T19:36:08.067Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:09.103Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:10.710Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:11.650Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:13.255Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:14.201Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:15.806Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:16.759Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:18.360Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:19.314Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:20.907Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:21.866Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:22.264Z","pid":25372,"hostname":"XBMCServer","Key with marketId: ":{"pubkey":"9DapPYJQ6DzoHaUmrCicPR5apRw3mUgov1UiK2RNu7Hz","writable":true,"signer":false,"source":"transaction"},"msg":"MarketID Key"}
+{"level":30,"time":"2024-05-30T19:36:22.264Z","pid":25372,"hostname":"XBMCServer","Found Time: ":"5/30/2024, 2:36:22 PM","msg":"Found"}
+{"level":30,"time":"2024-05-30T19:36:22.264Z","pid":25372,"hostname":"XBMCServer","MarketID: ":"9DapPYJQ6DzoHaUmrCicPR5apRw3mUgov1UiK2RNu7Hz","msg":"MarketID"}
+{"level":30,"time":"2024-05-30T19:36:22.772Z","pid":25372,"hostname":"XBMCServer","msg":"Token has SOL address for baseMint. Skipping Token."}
+{"level":30,"time":"2024-05-30T19:36:22.772Z","pid":25372,"hostname":"XBMCServer","msg":"Opening WebSocket"}
+{"level":30,"time":"2024-05-30T19:36:22.868Z","pid":25372,"hostname":"XBMCServer","msg":"txsFromblock is undefined."}
+{"level":30,"time":"2024-05-30T19:36:23.461Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:24.415Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:26.009Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:26.969Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:28.561Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:29.521Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:31.119Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:32.073Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:33.665Z","pid":25372,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":67.103,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T19:36:33.665Z","pid":25372,"hostname":"XBMCServer","Swap Sol for Meme txids":[["2kZxfgADe89e33CPi7FW9YLmUNufugpGXzsXnHMzJxXaK55euD3LBDJyiaLTYx2X4Pi3M4ESeU61m9wEdWKqj1TN","expired"]],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T19:36:33.665Z","pid":25372,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T19:36:33.851Z","pid":25372,"hostname":"XBMCServer","Attempted Tx":["3b92QA5fPovTZRzTypyDK62zC5FKyYepcKFwUpwxVCctuqVWZhAinLnugZbYLRdnX1CBQFXVLdrB9mK7RArWFUdm"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T19:36:34.421Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:34.621Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:36.964Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:37.164Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:39.513Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:39.709Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:42.075Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:42.273Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:44.625Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:44.822Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:47.180Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:47.375Z","pid":25372,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":64.453,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T19:36:47.375Z","pid":25372,"hostname":"XBMCServer","Swap Sol for Meme txids":[["tv4Lz9f3rKMUeMFxtzodc6ozyaEi1WWHsGUHx8TvtZoe8AKThc8i2UjQrxQHgmM4TbyrUZpQmycp9rWStDEhrni","expired"]],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T19:36:47.375Z","pid":25372,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T19:36:49.104Z","pid":25372,"hostname":"XBMCServer","Attempted Tx":["VMNoFna5pYHdH3WF71eTpmvvS37VDwsnt8NnHgqQHDtRQiydgz9r9ssWj23LCv5rsyeaXd8xbPL2WqJ1TxUCYiR"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T19:36:49.148Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:49.733Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:51.704Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:52.290Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:54.261Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:54.846Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:56.809Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:57.397Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:59.365Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:36:59.951Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:01.910Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:02.497Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:04.454Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:05.041Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:07.004Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:07.602Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:09.559Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:10.150Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:12.109Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:12.704Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:14.662Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:15.261Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:17.205Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:17.811Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:19.757Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:20.361Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:22.310Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:22.909Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:24.862Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:25.462Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:27.421Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:28.008Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:29.976Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:30.558Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:32.524Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:33.114Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:35.074Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:35.665Z","pid":25372,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":61.915,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T19:37:35.665Z","pid":25372,"hostname":"XBMCServer","Swap Sol for Meme txids":[["3b92QA5fPovTZRzTypyDK62zC5FKyYepcKFwUpwxVCctuqVWZhAinLnugZbYLRdnX1CBQFXVLdrB9mK7RArWFUdm","expired"]],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T19:37:35.665Z","pid":25372,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T19:37:35.847Z","pid":25372,"hostname":"XBMCServer","Attempted Tx":["5fDyE2s5jWu9WhjM1G3DQYzh69fBWWKNWT6fXafpH8mZQS648FUs42PBCDkqVVL8aBVhcLqsurCfwMiHuBtsiPmL"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T19:37:36.421Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:37.635Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:38.971Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:40.179Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:41.527Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:42.735Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:44.084Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:45.286Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:46.637Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:47.833Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:49.190Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:50.379Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:51.736Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:52.936Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:54.293Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:55.479Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:56.836Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:58.030Z","pid":25372,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":70.578,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T19:37:58.030Z","pid":25372,"hostname":"XBMCServer","Swap Sol for Meme txids":[["VMNoFna5pYHdH3WF71eTpmvvS37VDwsnt8NnHgqQHDtRQiydgz9r9ssWj23LCv5rsyeaXd8xbPL2WqJ1TxUCYiR","expired"]],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T19:37:58.031Z","pid":25372,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T19:37:58.222Z","pid":25372,"hostname":"XBMCServer","Attempted Tx":["29iXZeuXGkbCG7PPzMfSEWaEv5T8ighRXEbn2jySdUXthEXgwchfBzAFHVf3xgm4weLDhmksKikT8kGFyCSvX6kw"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T19:37:58.266Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:37:59.393Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:00.811Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:01.951Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:03.355Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:04.501Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:05.908Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:07.057Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:08.463Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:09.615Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:11.017Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:12.172Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:13.575Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:14.725Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:16.136Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:17.276Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:18.683Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:19.828Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:20.979Z","pid":25372,"hostname":"XBMCServer","msg":"txsFromBlock found."}
+{"level":30,"time":"2024-05-30T19:38:20.980Z","pid":25372,"hostname":"XBMCServer","msg":"Closing websocket."}
+{"level":30,"time":"2024-05-30T19:38:21.231Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:21.527Z","pid":25372,"hostname":"XBMCServer","Key with marketId: ":{"pubkey":"3Ls5xaSbMDBsuLq9BLC1mTT9b1mCnqLU8Z1mtqCM6vpk","writable":true,"signer":true,"source":"transaction"},"msg":"MarketID Key"}
+{"level":30,"time":"2024-05-30T19:38:21.527Z","pid":25372,"hostname":"XBMCServer","Found Time: ":"5/30/2024, 2:38:21 PM","msg":"Found"}
+{"level":30,"time":"2024-05-30T19:38:21.527Z","pid":25372,"hostname":"XBMCServer","MarketID: ":"3Ls5xaSbMDBsuLq9BLC1mTT9b1mCnqLU8Z1mtqCM6vpk","msg":"MarketID"}
+{"level":30,"time":"2024-05-30T19:38:22.035Z","pid":25372,"hostname":"XBMCServer","Token Address: ":"35KNwGkEDjZUVVbStXwHFX7ADMPU9YYAHZZojYZ8e93t","msg":"Token Address"}
+{"level":30,"time":"2024-05-30T19:38:22.381Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:22.569Z","pid":25372,"hostname":"XBMCServer","msg":"Mint authority is revoked."}
+{"level":30,"time":"2024-05-30T19:38:22.569Z","pid":25372,"hostname":"XBMCServer","msg":"Freeze authority is not revoked."}
+{"level":30,"time":"2024-05-30T19:38:22.569Z","pid":25372,"hostname":"XBMCServer","msg":"Opening WebSocket"}
+{"level":30,"time":"2024-05-30T19:38:22.679Z","pid":25372,"hostname":"XBMCServer","msg":"txsFromblock is undefined."}
+{"level":30,"time":"2024-05-30T19:38:23.777Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:24.929Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:26.327Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:27.472Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:28.878Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:30.029Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:31.428Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:32.573Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:33.985Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:35.116Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:36.531Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:37.665Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:39.084Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:40.217Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:41.642Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:42.767Z","pid":25372,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":67.022,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T19:38:42.767Z","pid":25372,"hostname":"XBMCServer","Swap Sol for Meme txids":[["5fDyE2s5jWu9WhjM1G3DQYzh69fBWWKNWT6fXafpH8mZQS648FUs42PBCDkqVVL8aBVhcLqsurCfwMiHuBtsiPmL","expired"]],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T19:38:42.767Z","pid":25372,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T19:38:42.960Z","pid":25372,"hostname":"XBMCServer","Attempted Tx":["2XC4JabkjnQ5XNvFL6gGu1MbSNTR3yxLUYts4PhuzaNPJq2zmTiEGiGrmeKXGcGjLPcMcMygiRhbst8RjdbuwHpm"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T19:38:43.536Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:44.190Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:46.087Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:46.747Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:48.642Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:49.303Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:51.207Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:51.861Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:53.760Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:54.421Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:56.308Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:56.970Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:58.851Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:38:59.522Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:01.406Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:02.081Z","pid":25372,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":63.96,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T19:39:02.081Z","pid":25372,"hostname":"XBMCServer","Swap Sol for Meme txids":[["29iXZeuXGkbCG7PPzMfSEWaEv5T8ighRXEbn2jySdUXthEXgwchfBzAFHVf3xgm4weLDhmksKikT8kGFyCSvX6kw","expired"]],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T19:39:02.081Z","pid":25372,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T19:39:02.802Z","pid":25372,"hostname":"XBMCServer","Attempted Tx":["3r8syTVtBDomxjPFJyUhzHjx7CZfnpeawcC6dPiWJUEheoc1acJ458okFjxpsMecbP2D6xndGxiWkddRXUxaXwoc"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T19:39:03.373Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:03.955Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:05.925Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:06.499Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:08.480Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:09.053Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:11.030Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:11.601Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:13.587Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:14.158Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:16.129Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:16.715Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:18.677Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:19.263Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:21.231Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:21.812Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:23.782Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:24.363Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:26.329Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:26.919Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:28.886Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:29.491Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:31.440Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:32.037Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:33.997Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:34.586Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:36.554Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:37.143Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:39.107Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:39.694Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:41.655Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:42.256Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:44.212Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:44.818Z","pid":25372,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":61.968,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T19:39:44.818Z","pid":25372,"hostname":"XBMCServer","Swap Sol for Meme txids":[["2XC4JabkjnQ5XNvFL6gGu1MbSNTR3yxLUYts4PhuzaNPJq2zmTiEGiGrmeKXGcGjLPcMcMygiRhbst8RjdbuwHpm","expired"]],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T19:39:44.818Z","pid":25372,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T19:39:45.276Z","pid":25372,"hostname":"XBMCServer","Attempted Tx":["5iqqfcp1g7K4278tC4Q3awAVyTmemA71K23GuYJVwCAHVnqeLFvRnW2qRxryETtYGK6EW3Lj1VaddWUirct18oFr"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T19:39:45.860Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:46.760Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:48.408Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:49.309Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:50.971Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:51.866Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:53.535Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:54.414Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:56.082Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:56.963Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:58.641Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:39:59.512Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:01.190Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:02.066Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:03.750Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:04.624Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:05.442Z","pid":25372,"hostname":"XBMCServer","msg":"txsFromBlock found."}
+{"level":30,"time":"2024-05-30T19:40:05.443Z","pid":25372,"hostname":"XBMCServer","msg":"Closing websocket."}
+{"level":30,"time":"2024-05-30T19:40:06.299Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:07.175Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:08.846Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:09.780Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:11.401Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:12.324Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:13.959Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:14.871Z","pid":25372,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":72.708,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T19:40:14.871Z","pid":25372,"hostname":"XBMCServer","Swap Sol for Meme txids":[["3r8syTVtBDomxjPFJyUhzHjx7CZfnpeawcC6dPiWJUEheoc1acJ458okFjxpsMecbP2D6xndGxiWkddRXUxaXwoc","expired"]],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T19:40:14.871Z","pid":25372,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T19:40:15.064Z","pid":25372,"hostname":"XBMCServer","Attempted Tx":["2EpGdQhNi9C3wrRUT5qfYfsdTj9HncUedEp5EX8tCbkVrMzDJdSbid3yMLY8nnqgxBTNY9aJFL1JB4eCUefvDHTu"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T19:40:15.642Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:16.506Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:18.209Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:19.061Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:20.757Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:21.613Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:23.308Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:24.159Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:25.854Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:26.711Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:27.182Z","pid":25372,"hostname":"XBMCServer","Key with marketId: ":{"pubkey":"ArHY7BQxG7zMQwsSjrZShf8tKoDivrCjG892kdWjbg31","writable":true,"signer":false,"source":"transaction"},"msg":"MarketID Key"}
+{"level":30,"time":"2024-05-30T19:40:27.182Z","pid":25372,"hostname":"XBMCServer","Found Time: ":"5/30/2024, 2:40:27 PM","msg":"Found"}
+{"level":30,"time":"2024-05-30T19:40:27.182Z","pid":25372,"hostname":"XBMCServer","MarketID: ":"ArHY7BQxG7zMQwsSjrZShf8tKoDivrCjG892kdWjbg31","msg":"MarketID"}
+{"level":30,"time":"2024-05-30T19:40:27.688Z","pid":25372,"hostname":"XBMCServer","msg":"Token has SOL address for baseMint. Skipping Token."}
+{"level":30,"time":"2024-05-30T19:40:27.688Z","pid":25372,"hostname":"XBMCServer","msg":"Opening WebSocket"}
+{"level":30,"time":"2024-05-30T19:40:27.794Z","pid":25372,"hostname":"XBMCServer","msg":"txsFromblock is undefined."}
+{"level":30,"time":"2024-05-30T19:40:28.407Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:29.270Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:30.957Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:31.826Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:33.511Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:34.383Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:36.066Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:36.941Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:38.614Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:39.491Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:41.183Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:42.035Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:43.737Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:44.591Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:46.288Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:47.142Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:48.838Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:49.689Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:51.390Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:52.248Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:53.938Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:54.797Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:56.496Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:57.352Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:59.043Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:40:59.909Z","pid":25372,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":74.98,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T19:40:59.909Z","pid":25372,"hostname":"XBMCServer","Swap Sol for Meme txids":[["5iqqfcp1g7K4278tC4Q3awAVyTmemA71K23GuYJVwCAHVnqeLFvRnW2qRxryETtYGK6EW3Lj1VaddWUirct18oFr","expired"]],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T19:40:59.909Z","pid":25372,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T19:41:00.077Z","pid":25372,"hostname":"XBMCServer","Attempted Tx":["2Upsu5qGm1MAmv2vzXzxmNNgeZxivuCQifBZyrvJRXPdtbbk4dCxjKi6p2asndiBEHRuLmzuwMTsWG6AHLSZrc5s"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T19:41:00.666Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:01.588Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:03.217Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:04.132Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:05.753Z","pid":25372,"hostname":"XBMCServer","Tx Success. Elapsed Time (seconds)":5.751,"msg":"Tx Success"}
+{"level":30,"time":"2024-05-30T19:41:05.753Z","pid":25372,"hostname":"XBMCServer","Swap Sol for Meme txids":[["2Upsu5qGm1MAmv2vzXzxmNNgeZxivuCQifBZyrvJRXPdtbbk4dCxjKi6p2asndiBEHRuLmzuwMTsWG6AHLSZrc5s"]],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T19:41:05.754Z","pid":25372,"hostname":"XBMCServer","msg":"Start get balances"}
+{"level":30,"time":"2024-05-30T19:41:06.287Z","pid":25372,"hostname":"XBMCServer","SOL Price in USD":{},"msg":"SOL Price in USD"}
+{"level":30,"time":"2024-05-30T19:41:06.287Z","pid":25372,"hostname":"XBMCServer","Meme Buy Price":null,"msg":"Meme Buy Price"}
+{"level":30,"time":"2024-05-30T19:41:06.287Z","pid":25372,"hostname":"XBMCServer","msg":"Meme Buy Qty"}
+{"level":30,"time":"2024-05-30T19:41:06.316Z","pid":25372,"hostname":"XBMCServer","current price":"169.27","msg":"Current SOL Price in USD"}
+{"level":30,"time":"2024-05-30T19:41:06.690Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:09.238Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:11.794Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:14.342Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:16.898Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:19.458Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:22.011Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:24.562Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:27.110Z","pid":25372,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":72.156,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T19:41:27.110Z","pid":25372,"hostname":"XBMCServer","Swap Sol for Meme txids":[["2EpGdQhNi9C3wrRUT5qfYfsdTj9HncUedEp5EX8tCbkVrMzDJdSbid3yMLY8nnqgxBTNY9aJFL1JB4eCUefvDHTu","expired"]],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T19:41:27.110Z","pid":25372,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T19:41:27.307Z","pid":25372,"hostname":"XBMCServer","Attempted Tx":["3d6ihsDKmQ99nbQctgkKBKxGUY9XxtLdwdvZydhGTAzceiTQiKQ9ijWPv8KMu2z2QCcxV6xct94vZuCiM5WJDvGT"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T19:41:28.916Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:31.475Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:34.028Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:36.585Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:39.140Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:41.693Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:44.245Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:46.800Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:49.351Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:51.902Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:54.456Z","pid":25372,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:41:55.693Z","pid":25372,"hostname":"XBMCServer","msg":"txsFromBlock found."}
+{"level":30,"time":"2024-05-30T19:41:55.694Z","pid":25372,"hostname":"XBMCServer","msg":"Closing websocket."}
+{"level":30,"time":"2024-05-30T19:41:56.360Z","pid":25372,"hostname":"XBMCServer","msg":"Time to sell Meme"}
+{"level":30,"time":"2024-05-30T19:44:58.169Z","pid":7112,"hostname":"XBMCServer","msg":"Market Key Data Retrieved"}
+{"level":30,"time":"2024-05-30T19:44:58.170Z","pid":7112,"hostname":"XBMCServer","msg":"Market decoded Data Retrieved"}
+{"level":30,"time":"2024-05-30T19:44:58.275Z","pid":7112,"hostname":"XBMCServer","msg":"Pool Keys Retrieved"}
+{"level":30,"time":"2024-05-30T19:44:58.276Z","pid":7112,"hostname":"XBMCServer","msg":"Start get balances"}
+{"level":30,"time":"2024-05-30T19:45:06.349Z","pid":7112,"hostname":"XBMCServer","Tx":"3d6ihsDKmQ99nbQctgkKBKxGUY9XxtLdwdvZydhGTAzceiTQiKQ9ijWPv8KMu2z2QCcxV6xct94vZuCiM5WJDvGT","msg":"Cannot retrieve Tx."}
+{"level":30,"time":"2024-05-30T19:45:06.350Z","pid":7112,"hostname":"XBMCServer","msg":"Token Balance Retrieved"}
+{"level":30,"time":"2024-05-30T19:45:06.350Z","pid":7112,"hostname":"XBMCServer","msg":"Time to sell Meme"}
+{"level":30,"time":"2024-05-30T19:45:06.438Z","pid":7112,"hostname":"XBMCServer","msg":"Trying to swap Meme for SOL"}
+{"level":50,"time":"2024-05-30T19:45:06.441Z","pid":7112,"hostname":"XBMCServer","err":{"type":"Error","message":"amounts must greater than zero (argument=\"currencyAmounts\"), value={\"amountIn\":\"0.000000000\",\"amountOut\":\"0.000000001\"}), code=INVALID_ARGUMENT, module=Liquidity, version=1.1.0-beta.6)","stack":"Error: amounts must greater than zero (argument=\"currencyAmounts\"), value={\"amountIn\":\"0.000000000\",\"amountOut\":\"0.000000001\"}), code=INVALID_ARGUMENT, module=Liquidity, version=1.1.0-beta.6)\n    at Logger.makeError (C:\\src\\SOLSniper\\solana-spl-token-sniper\\node_modules\\@raydium-io\\raydium-sdk\\lib\\cjs\\common\\logger.js:175:23)\n    at Logger.throwError (C:\\src\\SOLSniper\\solana-spl-token-sniper\\node_modules\\@raydium-io\\raydium-sdk\\lib\\cjs\\common\\logger.js:184:20)\n    at Logger.throwArgumentError (C:\\src\\SOLSniper\\solana-spl-token-sniper\\node_modules\\@raydium-io\\raydium-sdk\\lib\\cjs\\common\\logger.js:187:21)\n    at Logger.assertArgument (C:\\src\\SOLSniper\\solana-spl-token-sniper\\node_modules\\@raydium-io\\raydium-sdk\\lib\\cjs\\common\\logger.js:202:14)\n    at Liquidity.<anonymous> (C:\\src\\SOLSniper\\solana-spl-token-sniper\\node_modules\\@raydium-io\\raydium-sdk\\lib\\cjs\\liquidity\\liquidity.js:679:20)\n    at Generator.next (<anonymous>)\n    at C:\\src\\SOLSniper\\solana-spl-token-sniper\\node_modules\\@raydium-io\\raydium-sdk\\lib\\cjs\\liquidity\\liquidity.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\src\\SOLSniper\\solana-spl-token-sniper\\node_modules\\@raydium-io\\raydium-sdk\\lib\\cjs\\liquidity\\liquidity.js:4:12)\n    at Liquidity.makeSwapInstructionSimple (C:\\src\\SOLSniper\\solana-spl-token-sniper\\node_modules\\@raydium-io\\raydium-sdk\\lib\\cjs\\liquidity\\liquidity.js:674:16)","reason":"amounts must greater than zero","code":"INVALID_ARGUMENT","argument":"currencyAmounts","value":{"amountIn":"0.000000000","amountOut":"0.000000001"}},"msg":"Error swapping Meme for SOL"}
+{"level":30,"time":"2024-05-30T19:47:01.071Z","pid":36944,"hostname":"XBMCServer","msg":"Start get balances"}
+{"level":30,"time":"2024-05-30T19:47:09.213Z","pid":36944,"hostname":"XBMCServer","Tx":"3d6ihsDKmQ99nbQctgkKBKxGUY9XxtLdwdvZydhGTAzceiTQiKQ9ijWPv8KMu2z2QCcxV6xct94vZuCiM5WJDvGT","msg":"Cannot retrieve Tx."}
+{"level":30,"time":"2024-05-30T19:47:09.213Z","pid":36944,"hostname":"XBMCServer","Meme Buy Price":null,"msg":"Meme Buy Price"}
+{"level":30,"time":"2024-05-30T19:47:09.213Z","pid":36944,"hostname":"XBMCServer","Meme Buy Qty":0,"msg":"Meme Buy Qty"}
+{"level":30,"time":"2024-05-30T19:47:09.213Z","pid":36944,"hostname":"XBMCServer","Token Balance":0,"msg":"Token Balance"}
+{"level":30,"time":"2024-05-30T19:47:39.446Z","pid":11624,"hostname":"XBMCServer","msg":"Start get balances"}
+{"level":30,"time":"2024-05-30T19:47:40.140Z","pid":11624,"hostname":"XBMCServer","validTx":[{"blockTime":1717098062,"meta":{"computeUnitsConsumed":57866,"err":null,"fee":5000,"innerInstructions":[{"index":2,"instructions":[{"accounts":[18],"data":"84eT","programIdIndex":15,"stackHeight":2},{"accounts":[0,2],"data":"11119os1e9qSs2u7TsThXqkBSRVFxhmYaFKFZ1waB2X7armDmvK3p5GmLdUxYdg3h7QSrL","programIdIndex":14,"stackHeight":2},{"accounts":[2],"data":"P","programIdIndex":15,"stackHeight":2},{"accounts":[2,18],"data":"6SjEW3GFVsv2mJHTmy6xxX9KKRPeUWh96Qb4Rytd4f4GY","programIdIndex":15,"stackHeight":2}]},{"index":3,"instructions":[{"accounts":[1,7,0],"data":"3QCwqmHZ4mdq","programIdIndex":15,"stackHeight":2},{"accounts":[6,2,20],"data":"3vApQydGZkqd","programIdIndex":15,"stackHeight":2}]}],"loadedAddresses":{"readonly":["SysvarRent111111111111111111111111111111111","srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX"],"writable":[]},"logMessages":["Program 11111111111111111111111111111111 invoke [1]","Program 11111111111111111111111111111111 success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]","Program log: Instruction: InitializeAccount","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3443 of 999850 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]","Program log: Create","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program log: Instruction: GetAccountDataSize","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 1569 of 991040 compute units","Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program 11111111111111111111111111111111 invoke [2]","Program 11111111111111111111111111111111 success","Program log: Initialize the associated token account","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program log: Instruction: InitializeImmutableOwner","Program log: Please upgrade to SPL Token 2022 for immutable owner support","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 1405 of 984453 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program log: Instruction: InitializeAccount3","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4188 of 980571 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 20307 of 996407 compute units","Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success","Program 675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8 invoke [1]","Program log: ray_log: A0BCDwAAAAAAAQAAAAAAAAABAAAAAAAAAEBCDwAAAAAAx+Z5yD0DAADD4AQAAAAAAPNln2R0AgAA","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program log: Instruction: Transfer","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4736 of 958214 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program log: Instruction: Transfer","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4645 of 950497 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program 675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8 consumed 31051 of 976100 compute units","Program 675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8 success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]","Program log: Instruction: CloseAccount","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2915 of 945049 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success"],"postBalances":[21310146,0,2039280,6124800,23357760,16258560,2039280,34267693,3591360,101977920,101977920,79594560,2039280,2039280,1,934087680,565753105096,731913600,1461600,1141440,3866064002,0,1009200,1141440],"postTokenBalances":[{"accountIndex":2,"mint":"AHLgYoaju424dTEHpswK5toPzH1Wmi7asgxegyXeLDhb","owner":"6bXq74ihb4kw2oNFswmd3AsvvW4f6wsPhftaVJwFMuqa","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"2698927629811","decimals":9,"uiAmount":2698.927629811,"uiAmountString":"2698.927629811"}},{"accountIndex":6,"mint":"AHLgYoaju424dTEHpswK5toPzH1Wmi7asgxegyXeLDhb","owner":"5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"73525029627907","decimals":9,"uiAmount":73525.029627907,"uiAmountString":"73525.029627907"}},{"accountIndex":7,"mint":"So11111111111111111111111111111111111111112","owner":"5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"32228413","decimals":9,"uiAmount":0.032228413,"uiAmountString":"0.032228413"}},{"accountIndex":12,"mint":"AHLgYoaju424dTEHpswK5toPzH1Wmi7asgxegyXeLDhb","owner":"7qw9gB6bS5aW43ykK5H36zvWbXHRAqcDdCxwAemhr94x","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"0","decimals":9,"uiAmount":null,"uiAmountString":"0"}},{"accountIndex":13,"mint":"So11111111111111111111111111111111111111112","owner":"7qw9gB6bS5aW43ykK5H36zvWbXHRAqcDdCxwAemhr94x","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"0","decimals":9,"uiAmount":null,"uiAmountString":"0"}}],"preBalances":[24354426,0,0,6124800,23357760,16258560,2039280,33267693,3591360,101977920,101977920,79594560,2039280,2039280,1,934087680,565753105096,731913600,1461600,1141440,3866064002,0,1009200,1141440],"preTokenBalances":[{"accountIndex":6,"mint":"AHLgYoaju424dTEHpswK5toPzH1Wmi7asgxegyXeLDhb","owner":"5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"76223957257718","decimals":9,"uiAmount":76223.957257718,"uiAmountString":"76223.957257718"}},{"accountIndex":7,"mint":"So11111111111111111111111111111111111111112","owner":"5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"31228413","decimals":9,"uiAmount":0.031228413,"uiAmountString":"0.031228413"}},{"accountIndex":12,"mint":"AHLgYoaju424dTEHpswK5toPzH1Wmi7asgxegyXeLDhb","owner":"7qw9gB6bS5aW43ykK5H36zvWbXHRAqcDdCxwAemhr94x","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"0","decimals":9,"uiAmount":null,"uiAmountString":"0"}},{"accountIndex":13,"mint":"So11111111111111111111111111111111111111112","owner":"7qw9gB6bS5aW43ykK5H36zvWbXHRAqcDdCxwAemhr94x","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"0","decimals":9,"uiAmount":null,"uiAmountString":"0"}}],"rewards":[],"status":{"Ok":null}},"slot":268896438,"transaction":{"message":{"header":{"numReadonlySignedAccounts":0,"numReadonlyUnsignedAccounts":8,"numRequiredSignatures":1},"staticAccountKeys":["6bXq74ihb4kw2oNFswmd3AsvvW4f6wsPhftaVJwFMuqa","9N88Wvyvqo9Q3uPK835zBtorhqDGtzcZZ2ZZ7smmdjLY","6NySVTQcrboe8rimE3Xa3sXDKgtxQ38BWF1GodjbAV4N","3SjTmDH2meuNFKB7HUSwrBLGX2MHCvjheRj6AvbsWGTY","2JVyFhTM99KJG9J18hmnREnN4EqXfEsCN8YAnWB1P6wK","5wUsM9CFAYdEE58KahDN6yqeQKUrLyQeKRXtErfjdpL9","5nyaU8xsCV7p1ZS4BPn85EsMN9Usqogb3pTjwsEdr3aE","7XDKDNe7eGDTVaDnca4vLnfRfYgESkjjJFA68TBF5rTe","36v7vPH7VXSYVfaD83t7Ck8Bdx1Ee6KaLmeTkobR9jB6","D9HjV5symADCsxo3YtW8FhL1tZCPBMnAcdtRxJTyy5k3","Du2T7bEBB2axmNnRLByayFXi8T3QYwCjp8LnQZX9MDM8","AmZm7vL8rkPeUkY9eoPZ7GXipqdDZp82sfWsHRCd5uLg","Gwv8VeMN1VSoQrbS6VTDzTYoHtFPVxUifKuXdzMCs1AF","AwPtkeWoyvc6n1ES7gG3t3pcktLVFmq4C3RMFyTGbAuE","11111111111111111111111111111111","TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","So11111111111111111111111111111111111111112","ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL","AHLgYoaju424dTEHpswK5toPzH1Wmi7asgxegyXeLDhb","675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8","5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","ELFAmWMdKwHAesbdemSBi1prCmPxmhCu4NHTpreN4QLF"],"recentBlockhash":"G6SpWMhbQ7TEhHT222UKZShNRNWwJxQULb3spyiZek7J","compiledInstructions":[{"programIdIndex":14,"accountKeyIndexes":[0,1],"data":{"type":"Buffer","data":[3,0,0,0,83,35,10,129,176,229,67,103,255,102,165,235,66,180,96,216,103,45,193,99,29,79,71,204,159,42,24,95,180,146,127,81,32,0,0,0,0,0,0,0,72,50,80,117,88,84,112,97,57,85,68,109,89,115,56,50,81,97,89,101,77,120,54,107,69,49,97,76,55,89,68,83,48,96,46,0,0,0,0,0,165,0,0,0,0,0,0,0,6,221,246,225,215,101,161,147,217,203,225,70,206,235,121,172,28,180,133,237,95,91,55,145,58,140,245,133,126,255,0,169]}},{"programIdIndex":15,"accountKeyIndexes":[1,16,0,22],"data":{"type":"Buffer","data":[1]}},{"programIdIndex":17,"accountKeyIndexes":[0,2,0,18,14,15],"data":{"type":"Buffer","data":[]}},{"programIdIndex":19,"accountKeyIndexes":[15,3,20,4,5,6,7,23,8,9,10,11,12,13,21,1,2,0],"data":{"type":"Buffer","data":[9,64,66,15,0,0,0,0,0,1,0,0,0,0,0,0,0]}},{"programIdIndex":15,"accountKeyIndexes":[1,0,0],"data":{"type":"Buffer","data":[9]}}],"addressTableLookups":[{"accountKey":"2immgwYNHBbyVQKVGCEkgWpi53bLwWNRMB5G2nbgYV17","readonlyIndexes":[5,11],"writableIndexes":[]}]},"signatures":["2Upsu5qGm1MAmv2vzXzxmNNgeZxivuCQifBZyrvJRXPdtbbk4dCxjKi6p2asndiBEHRuLmzuwMTsWG6AHLSZrc5s"]},"version":0}],"msg":"Valid Tx"}
+{"level":30,"time":"2024-05-30T19:47:40.141Z","pid":11624,"hostname":"XBMCServer","Meme Buy Price":3.705175303533529e-7,"msg":"Meme Buy Price"}
+{"level":30,"time":"2024-05-30T19:47:40.141Z","pid":11624,"hostname":"XBMCServer","Meme Buy Qty":2698.927629811,"msg":"Meme Buy Qty"}
+{"level":30,"time":"2024-05-30T19:47:40.141Z","pid":11624,"hostname":"XBMCServer","Token Balance":2698.927629811,"msg":"Token Balance"}
+{"level":30,"time":"2024-05-30T19:57:46.995Z","pid":30804,"hostname":"XBMCServer","msg":"Market Key Data Retrieved"}
+{"level":30,"time":"2024-05-30T19:57:46.996Z","pid":30804,"hostname":"XBMCServer","msg":"Market decoded Data Retrieved"}
+{"level":30,"time":"2024-05-30T19:57:47.102Z","pid":30804,"hostname":"XBMCServer","msg":"Pool Keys Retrieved"}
+{"level":30,"time":"2024-05-30T19:57:47.102Z","pid":30804,"hostname":"XBMCServer","msg":"Start get balances"}
+{"level":30,"time":"2024-05-30T19:57:55.345Z","pid":30804,"hostname":"XBMCServer","Tx":"3d6ihsDKmQ99nbQctgkKBKxGUY9XxtLdwdvZydhGTAzceiTQiKQ9ijWPv8KMu2z2QCcxV6xct94vZuCiM5WJDvGT","msg":"Cannot retrieve Tx."}
+{"level":30,"time":"2024-05-30T19:57:55.345Z","pid":30804,"hostname":"XBMCServer","msg":"Token Balance Retrieved"}
+{"level":30,"time":"2024-05-30T19:57:55.345Z","pid":30804,"hostname":"XBMCServer","Token Balance":0,"msg":"Token Balance"}
+{"level":30,"time":"2024-05-30T19:57:55.345Z","pid":30804,"hostname":"XBMCServer","msg":"Token Balance is null. Cannot sell"}
+{"level":30,"time":"2024-05-30T19:59:02.092Z","pid":11152,"hostname":"XBMCServer","msg":"Market Key Data Retrieved"}
+{"level":30,"time":"2024-05-30T19:59:02.093Z","pid":11152,"hostname":"XBMCServer","msg":"Market decoded Data Retrieved"}
+{"level":30,"time":"2024-05-30T19:59:02.207Z","pid":11152,"hostname":"XBMCServer","msg":"Pool Keys Retrieved"}
+{"level":30,"time":"2024-05-30T19:59:02.207Z","pid":11152,"hostname":"XBMCServer","msg":"Start get balances"}
+{"level":30,"time":"2024-05-30T19:59:02.745Z","pid":11152,"hostname":"XBMCServer","validTx":[{"blockTime":1717098062,"meta":{"computeUnitsConsumed":57866,"err":null,"fee":5000,"innerInstructions":[{"index":2,"instructions":[{"accounts":[18],"data":"84eT","programIdIndex":15,"stackHeight":2},{"accounts":[0,2],"data":"11119os1e9qSs2u7TsThXqkBSRVFxhmYaFKFZ1waB2X7armDmvK3p5GmLdUxYdg3h7QSrL","programIdIndex":14,"stackHeight":2},{"accounts":[2],"data":"P","programIdIndex":15,"stackHeight":2},{"accounts":[2,18],"data":"6SjEW3GFVsv2mJHTmy6xxX9KKRPeUWh96Qb4Rytd4f4GY","programIdIndex":15,"stackHeight":2}]},{"index":3,"instructions":[{"accounts":[1,7,0],"data":"3QCwqmHZ4mdq","programIdIndex":15,"stackHeight":2},{"accounts":[6,2,20],"data":"3vApQydGZkqd","programIdIndex":15,"stackHeight":2}]}],"loadedAddresses":{"readonly":["SysvarRent111111111111111111111111111111111","srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX"],"writable":[]},"logMessages":["Program 11111111111111111111111111111111 invoke [1]","Program 11111111111111111111111111111111 success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]","Program log: Instruction: InitializeAccount","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3443 of 999850 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]","Program log: Create","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program log: Instruction: GetAccountDataSize","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 1569 of 991040 compute units","Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program 11111111111111111111111111111111 invoke [2]","Program 11111111111111111111111111111111 success","Program log: Initialize the associated token account","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program log: Instruction: InitializeImmutableOwner","Program log: Please upgrade to SPL Token 2022 for immutable owner support","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 1405 of 984453 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program log: Instruction: InitializeAccount3","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4188 of 980571 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 20307 of 996407 compute units","Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success","Program 675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8 invoke [1]","Program log: ray_log: A0BCDwAAAAAAAQAAAAAAAAABAAAAAAAAAEBCDwAAAAAAx+Z5yD0DAADD4AQAAAAAAPNln2R0AgAA","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program log: Instruction: Transfer","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4736 of 958214 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program log: Instruction: Transfer","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4645 of 950497 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program 675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8 consumed 31051 of 976100 compute units","Program 675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8 success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]","Program log: Instruction: CloseAccount","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2915 of 945049 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success"],"postBalances":[21310146,0,2039280,6124800,23357760,16258560,2039280,34267693,3591360,101977920,101977920,79594560,2039280,2039280,1,934087680,565753105096,731913600,1461600,1141440,3866064002,0,1009200,1141440],"postTokenBalances":[{"accountIndex":2,"mint":"AHLgYoaju424dTEHpswK5toPzH1Wmi7asgxegyXeLDhb","owner":"6bXq74ihb4kw2oNFswmd3AsvvW4f6wsPhftaVJwFMuqa","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"2698927629811","decimals":9,"uiAmount":2698.927629811,"uiAmountString":"2698.927629811"}},{"accountIndex":6,"mint":"AHLgYoaju424dTEHpswK5toPzH1Wmi7asgxegyXeLDhb","owner":"5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"73525029627907","decimals":9,"uiAmount":73525.029627907,"uiAmountString":"73525.029627907"}},{"accountIndex":7,"mint":"So11111111111111111111111111111111111111112","owner":"5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"32228413","decimals":9,"uiAmount":0.032228413,"uiAmountString":"0.032228413"}},{"accountIndex":12,"mint":"AHLgYoaju424dTEHpswK5toPzH1Wmi7asgxegyXeLDhb","owner":"7qw9gB6bS5aW43ykK5H36zvWbXHRAqcDdCxwAemhr94x","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"0","decimals":9,"uiAmount":null,"uiAmountString":"0"}},{"accountIndex":13,"mint":"So11111111111111111111111111111111111111112","owner":"7qw9gB6bS5aW43ykK5H36zvWbXHRAqcDdCxwAemhr94x","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"0","decimals":9,"uiAmount":null,"uiAmountString":"0"}}],"preBalances":[24354426,0,0,6124800,23357760,16258560,2039280,33267693,3591360,101977920,101977920,79594560,2039280,2039280,1,934087680,565753105096,731913600,1461600,1141440,3866064002,0,1009200,1141440],"preTokenBalances":[{"accountIndex":6,"mint":"AHLgYoaju424dTEHpswK5toPzH1Wmi7asgxegyXeLDhb","owner":"5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"76223957257718","decimals":9,"uiAmount":76223.957257718,"uiAmountString":"76223.957257718"}},{"accountIndex":7,"mint":"So11111111111111111111111111111111111111112","owner":"5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"31228413","decimals":9,"uiAmount":0.031228413,"uiAmountString":"0.031228413"}},{"accountIndex":12,"mint":"AHLgYoaju424dTEHpswK5toPzH1Wmi7asgxegyXeLDhb","owner":"7qw9gB6bS5aW43ykK5H36zvWbXHRAqcDdCxwAemhr94x","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"0","decimals":9,"uiAmount":null,"uiAmountString":"0"}},{"accountIndex":13,"mint":"So11111111111111111111111111111111111111112","owner":"7qw9gB6bS5aW43ykK5H36zvWbXHRAqcDdCxwAemhr94x","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"0","decimals":9,"uiAmount":null,"uiAmountString":"0"}}],"rewards":[],"status":{"Ok":null}},"slot":268896438,"transaction":{"message":{"header":{"numReadonlySignedAccounts":0,"numReadonlyUnsignedAccounts":8,"numRequiredSignatures":1},"staticAccountKeys":["6bXq74ihb4kw2oNFswmd3AsvvW4f6wsPhftaVJwFMuqa","9N88Wvyvqo9Q3uPK835zBtorhqDGtzcZZ2ZZ7smmdjLY","6NySVTQcrboe8rimE3Xa3sXDKgtxQ38BWF1GodjbAV4N","3SjTmDH2meuNFKB7HUSwrBLGX2MHCvjheRj6AvbsWGTY","2JVyFhTM99KJG9J18hmnREnN4EqXfEsCN8YAnWB1P6wK","5wUsM9CFAYdEE58KahDN6yqeQKUrLyQeKRXtErfjdpL9","5nyaU8xsCV7p1ZS4BPn85EsMN9Usqogb3pTjwsEdr3aE","7XDKDNe7eGDTVaDnca4vLnfRfYgESkjjJFA68TBF5rTe","36v7vPH7VXSYVfaD83t7Ck8Bdx1Ee6KaLmeTkobR9jB6","D9HjV5symADCsxo3YtW8FhL1tZCPBMnAcdtRxJTyy5k3","Du2T7bEBB2axmNnRLByayFXi8T3QYwCjp8LnQZX9MDM8","AmZm7vL8rkPeUkY9eoPZ7GXipqdDZp82sfWsHRCd5uLg","Gwv8VeMN1VSoQrbS6VTDzTYoHtFPVxUifKuXdzMCs1AF","AwPtkeWoyvc6n1ES7gG3t3pcktLVFmq4C3RMFyTGbAuE","11111111111111111111111111111111","TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","So11111111111111111111111111111111111111112","ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL","AHLgYoaju424dTEHpswK5toPzH1Wmi7asgxegyXeLDhb","675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8","5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","ELFAmWMdKwHAesbdemSBi1prCmPxmhCu4NHTpreN4QLF"],"recentBlockhash":"G6SpWMhbQ7TEhHT222UKZShNRNWwJxQULb3spyiZek7J","compiledInstructions":[{"programIdIndex":14,"accountKeyIndexes":[0,1],"data":{"type":"Buffer","data":[3,0,0,0,83,35,10,129,176,229,67,103,255,102,165,235,66,180,96,216,103,45,193,99,29,79,71,204,159,42,24,95,180,146,127,81,32,0,0,0,0,0,0,0,72,50,80,117,88,84,112,97,57,85,68,109,89,115,56,50,81,97,89,101,77,120,54,107,69,49,97,76,55,89,68,83,48,96,46,0,0,0,0,0,165,0,0,0,0,0,0,0,6,221,246,225,215,101,161,147,217,203,225,70,206,235,121,172,28,180,133,237,95,91,55,145,58,140,245,133,126,255,0,169]}},{"programIdIndex":15,"accountKeyIndexes":[1,16,0,22],"data":{"type":"Buffer","data":[1]}},{"programIdIndex":17,"accountKeyIndexes":[0,2,0,18,14,15],"data":{"type":"Buffer","data":[]}},{"programIdIndex":19,"accountKeyIndexes":[15,3,20,4,5,6,7,23,8,9,10,11,12,13,21,1,2,0],"data":{"type":"Buffer","data":[9,64,66,15,0,0,0,0,0,1,0,0,0,0,0,0,0]}},{"programIdIndex":15,"accountKeyIndexes":[1,0,0],"data":{"type":"Buffer","data":[9]}}],"addressTableLookups":[{"accountKey":"2immgwYNHBbyVQKVGCEkgWpi53bLwWNRMB5G2nbgYV17","readonlyIndexes":[5,11],"writableIndexes":[]}]},"signatures":["2Upsu5qGm1MAmv2vzXzxmNNgeZxivuCQifBZyrvJRXPdtbbk4dCxjKi6p2asndiBEHRuLmzuwMTsWG6AHLSZrc5s"]},"version":0}],"msg":"Valid Tx"}
+{"level":30,"time":"2024-05-30T19:59:02.746Z","pid":11152,"hostname":"XBMCServer","msg":"Token Balance Retrieved"}
+{"level":30,"time":"2024-05-30T19:59:02.746Z","pid":11152,"hostname":"XBMCServer","Token Balance":2698.927629811,"msg":"Token Balance"}
+{"level":30,"time":"2024-05-30T19:59:02.746Z","pid":11152,"hostname":"XBMCServer","msg":"Time to sell Meme"}
+{"level":30,"time":"2024-05-30T19:59:02.774Z","pid":11152,"hostname":"XBMCServer","msg":"Trying to swap Meme for SOL"}
+{"level":30,"time":"2024-05-30T19:59:03.494Z","pid":11152,"hostname":"XBMCServer","Attempted Tx":["2ewRKpeopANKQQ4hULd9ebn2zUCwAfTBQV6A6r3XeKYGZhs6VPDcqN6JBv74XCFPjAynpWaAXUZXc9ZReSeA9kwA"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T19:59:03.538Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:06.087Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:08.634Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:11.190Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:13.746Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:16.300Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:18.856Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:21.412Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:23.972Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:26.519Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:29.072Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:31.629Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:34.183Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:36.739Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:39.296Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:41.843Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:44.395Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:46.947Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:49.495Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:52.044Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:54.593Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:57.141Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T19:59:59.685Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:02.242Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:04.826Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:07.380Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:09.942Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:12.488Z","pid":11152,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":69.641,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T20:00:12.488Z","pid":11152,"hostname":"XBMCServer","Swap Meme for Sol txids":[["2ewRKpeopANKQQ4hULd9ebn2zUCwAfTBQV6A6r3XeKYGZhs6VPDcqN6JBv74XCFPjAynpWaAXUZXc9ZReSeA9kwA","expired"]],"msg":"Swap Meme to SOL TxnIDs"}
+{"level":30,"time":"2024-05-30T20:00:12.488Z","pid":11152,"hostname":"XBMCServer","msg":"Swap Meme for Sol Block Expired. Retrying Swap."}
+{"level":30,"time":"2024-05-30T20:00:12.512Z","pid":11152,"hostname":"XBMCServer","msg":"Trying to swap Meme for SOL"}
+{"level":30,"time":"2024-05-30T20:00:12.756Z","pid":11152,"hostname":"XBMCServer","Attempted Tx":["iU41K9LRcuawWviFuqbFD39dvZsYsPu4BsetDEYgno4Uj3MWzUYcjAq1MVxzjHSd57L48n5u2ZgZ316VULDC2yT"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T20:00:13.322Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:15.870Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:18.422Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:20.976Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:23.535Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:26.084Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:28.631Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:31.180Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:33.725Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:36.272Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:38.827Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:41.378Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:43.931Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:46.480Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:49.033Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:51.587Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:54.142Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:56.707Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:00:59.253Z","pid":11152,"hostname":"XBMCServer","msg":"sleepTime"}
+{"level":30,"time":"2024-05-30T20:01:01.783Z","pid":11152,"hostname":"XBMCServer","Tx Success. Elapsed Time (seconds)":49.217,"msg":"Tx Success"}
+{"level":30,"time":"2024-05-30T20:01:01.783Z","pid":11152,"hostname":"XBMCServer","Swap Meme for Sol txids":[["iU41K9LRcuawWviFuqbFD39dvZsYsPu4BsetDEYgno4Uj3MWzUYcjAq1MVxzjHSd57L48n5u2ZgZ316VULDC2yT"]],"msg":"Swap Meme to SOL TxnIDs"}
+{"level":30,"time":"2024-05-30T20:01:01.783Z","pid":11152,"hostname":"XBMCServer","msg":"Start get balances"}
+{"level":30,"time":"2024-05-30T20:01:02.320Z","pid":11152,"hostname":"XBMCServer","msg":"Sold Meme for SOL"}
+{"level":30,"time":"2024-05-30T20:01:02.320Z","pid":11152,"hostname":"XBMCServer","msg":"Current SOL Balance"}
+{"level":30,"time":"2024-05-30T20:46:36.532Z","pid":8180,"hostname":"XBMCServer","msg":"Wallet Token Accounts"}
+{"level":30,"time":"2024-05-30T20:46:36.532Z","pid":8180,"hostname":"XBMCServer","Wallet Token Accounts":[null],"msg":"Wallet Token Accounts"}
+{"level":30,"time":"2024-05-30T20:47:23.954Z","pid":29956,"hostname":"XBMCServer","msg":"Wallet Token Accounts"}
+{"level":30,"time":"2024-05-30T20:47:23.954Z","pid":29956,"hostname":"XBMCServer","Wallet Token Accounts":[null],"msg":"Wallet Token Accounts"}
+{"level":30,"time":"2024-05-30T22:22:51.159Z","pid":28940,"hostname":"XBMCServer","msg":"Opening WebSocket"}
+{"level":30,"time":"2024-05-30T22:22:51.337Z","pid":28940,"hostname":"XBMCServer","msg":"txsFromblock is undefined."}
+{"level":30,"time":"2024-05-30T22:24:44.017Z","pid":28940,"hostname":"XBMCServer","msg":"txsFromBlock found."}
+{"level":30,"time":"2024-05-30T22:24:44.019Z","pid":28940,"hostname":"XBMCServer","msg":"Closing websocket."}
+{"level":30,"time":"2024-05-30T22:24:44.673Z","pid":28940,"hostname":"XBMCServer","Key with marketId: ":{"pubkey":"6iNCP7ZRwaNwTVRYwGimxdHWcfbUVsPyn1Fc4vDYqc73","writable":true,"signer":false,"source":"transaction"},"msg":"MarketID Key"}
+{"level":30,"time":"2024-05-30T22:24:44.705Z","pid":28940,"hostname":"XBMCServer","Found Time: ":"5/30/2024, 5:24:44 PM","msg":"Found"}
+{"level":30,"time":"2024-05-30T22:24:44.705Z","pid":28940,"hostname":"XBMCServer","MarketID: ":"6iNCP7ZRwaNwTVRYwGimxdHWcfbUVsPyn1Fc4vDYqc73","msg":"MarketID"}
+{"level":30,"time":"2024-05-30T22:24:45.206Z","pid":28940,"hostname":"XBMCServer","Token Address: ":"EbjoYBkLftNJtGW56wMYcbBL3qhfuBXnSc3rfMKxLG9e","msg":"Token Address"}
+{"level":30,"time":"2024-05-30T22:24:45.743Z","pid":28940,"hostname":"XBMCServer","msg":"Mint authority is revoked."}
+{"level":30,"time":"2024-05-30T22:24:45.743Z","pid":28940,"hostname":"XBMCServer","msg":"Freeze authority is revoked."}
+{"level":30,"time":"2024-05-30T22:24:46.351Z","pid":28940,"hostname":"XBMCServer","Pool Keys:":[{"id":"3EtLwth2CAgWu2yLE6FWsPiXGCMjYBeAdCEBBSP7ru9L","baseMint":"EbjoYBkLftNJtGW56wMYcbBL3qhfuBXnSc3rfMKxLG9e","quoteMint":"So11111111111111111111111111111111111111112","lpMint":"8RfSkoe5B4mpp1RTETx78ZU5bge8oAg5hHEPxJmjU2Zg","baseDecimals":9,"quoteDecimals":9,"lpDecimals":9,"version":4,"programId":"675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8","authority":"5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","openOrders":"8SEaHqAgUWPAoPH4uLkCMk3jpfq7paUBGAGmRFSLsXez","targetOrders":"E5R7B1q4BjwiSq3Mz7SkmDVzQKoJrQ7e6zDYK24KCC6J","baseVault":"6WRsQfPEASVEETn92viZvDGRggD7w34ZEQvoM4qQ8PXQ","quoteVault":"FxLP4LMK8BimLKFdwGK9Z27gGu3vSnFBJoDjBLY6GYwn","withdrawQueue":"11111111111111111111111111111111","lpVault":"11111111111111111111111111111111","marketVersion":3,"marketProgramId":"srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX","marketId":"6iNCP7ZRwaNwTVRYwGimxdHWcfbUVsPyn1Fc4vDYqc73","marketAuthority":"8hy8KUMcfSDgqE9bysBzicgRNM9jfxbBuDVRbygRUT8J","marketBaseVault":"97sAkrLLZm4GWSUivxaEV7eRvS1aUyYswgCQBQGozeyt","marketQuoteVault":"5aiMCqEJ9w46cPNzhs4PR6KAv8yEwWcfzuZrKHXTLcKx","marketBids":"6JR2vmGcdfLcLBi1vZznjmtTErS2Ky8JtAp4D9nkf1Xu","marketAsks":"3kHZtGUBpJFb1JVWHnMJPkmgi8dFPfCT8rKjmZauoEX9","marketEventQueue":"BjGBrrHDMWhY1MLgH2KSpfwabGtyW2LDYyYYgkKkrebF","lookupTableAccount":"11111111111111111111111111111111"}],"msg":"Pool Keys"}
+{"level":30,"time":"2024-05-30T22:24:52.697Z","pid":28940,"hostname":"XBMCServer","msg":"LP info is null, trying to snipe launch"}
+{"level":30,"time":"2024-05-30T22:24:52.697Z","pid":28940,"hostname":"XBMCServer","msg":"Time to buy Meme"}
+{"level":30,"time":"2024-05-30T22:24:52.960Z","pid":28940,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:24:52.848Z","End Time":1717107892960,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:24:52.960Z","pid":28940,"hostname":"XBMCServer","Attempted Tx":["3M28G1qvVmKf3y4Lo9TtH1TmskpFujVuGedPN19j4A1AbKymGPGNUHqbmFwRtpThiLnNNc75N5itFg9uYxjXMDbW"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:24:52.960Z","pid":28940,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:26:04.216Z","pid":28940,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":71.368,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T22:26:04.216Z","pid":28940,"hostname":"XBMCServer","Swap Sol for Meme txids":["3M28G1qvVmKf3y4Lo9TtH1TmskpFujVuGedPN19j4A1AbKymGPGNUHqbmFwRtpThiLnNNc75N5itFg9uYxjXMDbW","expired"],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T22:26:04.216Z","pid":28940,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T22:26:04.881Z","pid":28940,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:26:04.828Z","End Time":1717107964881,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:26:04.881Z","pid":28940,"hostname":"XBMCServer","Attempted Tx":["2pB1B5tnePFNP7m3cHFXGUzhKweUitc83zvxuph5moC5fH9Ls3UV7onusxsMcoPyi1qzwyQwhBxRqR45bk6pYmPo"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:26:04.881Z","pid":28940,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:27:11.936Z","pid":28940,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":67.108,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T22:27:11.936Z","pid":28940,"hostname":"XBMCServer","Swap Sol for Meme txids":["2pB1B5tnePFNP7m3cHFXGUzhKweUitc83zvxuph5moC5fH9Ls3UV7onusxsMcoPyi1qzwyQwhBxRqR45bk6pYmPo","expired"],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T22:27:11.936Z","pid":28940,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T22:27:12.649Z","pid":28940,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:27:12.014Z","End Time":1717108032649,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:27:12.650Z","pid":28940,"hostname":"XBMCServer","Attempted Tx":["3NsvRSye4cEEJsD7cYdvHChAQonPKzozV5qgkLHo6rFYQMqmjseQgJfgLtSsS5PvRpWsyCgaVuJsrXwwED1Lsbfc"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:27:12.650Z","pid":28940,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:28:25.971Z","pid":28940,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":73.957,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T22:28:25.972Z","pid":28940,"hostname":"XBMCServer","Swap Sol for Meme txids":["3NsvRSye4cEEJsD7cYdvHChAQonPKzozV5qgkLHo6rFYQMqmjseQgJfgLtSsS5PvRpWsyCgaVuJsrXwwED1Lsbfc","expired"],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T22:28:25.972Z","pid":28940,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T22:28:26.626Z","pid":28940,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:28:26.051Z","End Time":1717108106626,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:28:26.626Z","pid":28940,"hostname":"XBMCServer","Attempted Tx":["2D2B67hkQyWYd5GZH1WfrM6ohYj9TaTZCpHWi7R1kV5GzYd2sb2bWZzBemZn7G3dfB49arsRBYRiBEkgK8eBFG6V"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:28:26.626Z","pid":28940,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:29:28.582Z","pid":28940,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":62.531,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T22:29:28.582Z","pid":28940,"hostname":"XBMCServer","Swap Sol for Meme txids":["2D2B67hkQyWYd5GZH1WfrM6ohYj9TaTZCpHWi7R1kV5GzYd2sb2bWZzBemZn7G3dfB49arsRBYRiBEkgK8eBFG6V","expired"],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T22:29:28.582Z","pid":28940,"hostname":"XBMCServer","msg":"Swap Sol for Meme Block Expired - Sniping - Retry Swap"}
+{"level":30,"time":"2024-05-30T22:29:28.727Z","pid":28940,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:29:28.661Z","End Time":1717108168727,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:29:28.727Z","pid":28940,"hostname":"XBMCServer","Attempted Tx":["CP6JU5UD26UAVdQW4wuRBNx8UsL5j6roB55t8uNzdVvXzNdaYT3Rtxz1e3KwhSTvfU8usgGePATnEb5w2LRW2pH"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:29:28.727Z","pid":28940,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:30:00.744Z","pid":28940,"hostname":"XBMCServer","Tx Success. Elapsed Time (seconds)":32.083,"msg":"Tx Success"}
+{"level":30,"time":"2024-05-30T22:30:00.744Z","pid":28940,"hostname":"XBMCServer","Swap Sol for Meme txids":["CP6JU5UD26UAVdQW4wuRBNx8UsL5j6roB55t8uNzdVvXzNdaYT3Rtxz1e3KwhSTvfU8usgGePATnEb5w2LRW2pH"],"msg":"SOL to Meme TxnIDs"}
+{"level":30,"time":"2024-05-30T22:30:01.253Z","pid":28940,"hostname":"XBMCServer","msg":"Start get balances"}
+{"level":30,"time":"2024-05-30T22:30:01.797Z","pid":28940,"hostname":"XBMCServer","msg":"Cannot get token balance after 625 tries. Try to sell 200 tokens to get some money back."}
+{"level":30,"time":"2024-05-30T22:30:31.641Z","pid":34476,"hostname":"XBMCServer","msg":"Market Key Data Retrieved"}
+{"level":30,"time":"2024-05-30T22:30:31.642Z","pid":34476,"hostname":"XBMCServer","msg":"Market decoded Data Retrieved"}
+{"level":30,"time":"2024-05-30T22:30:31.745Z","pid":34476,"hostname":"XBMCServer","msg":"Pool Keys Retrieved"}
+{"level":30,"time":"2024-05-30T22:30:31.745Z","pid":34476,"hostname":"XBMCServer","msg":"Start get balances"}
+{"level":30,"time":"2024-05-30T22:30:32.288Z","pid":34476,"hostname":"XBMCServer","validTx":[{"blockTime":1717108199,"meta":{"computeUnitsConsumed":62639,"err":null,"fee":5000,"innerInstructions":[{"index":2,"instructions":[{"accounts":[18],"data":"84eT","programIdIndex":15,"stackHeight":2},{"accounts":[0,2],"data":"11119os1e9qSs2u7TsThXqkBSRVFxhmYaFKFZ1waB2X7armDmvK3p5GmLdUxYdg3h7QSrL","programIdIndex":14,"stackHeight":2},{"accounts":[2],"data":"P","programIdIndex":15,"stackHeight":2},{"accounts":[2,18],"data":"6SjEW3GFVsv2mJHTmy6xxX9KKRPeUWh96Qb4Rytd4f4GY","programIdIndex":15,"stackHeight":2}]},{"index":3,"instructions":[{"accounts":[1,7,0],"data":"3QCwqmHZ4mdq","programIdIndex":15,"stackHeight":2},{"accounts":[6,2,20],"data":"3i6g3EY6wsaX","programIdIndex":15,"stackHeight":2}]}],"loadedAddresses":{"readonly":["SysvarRent111111111111111111111111111111111","srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX"],"writable":[]},"logMessages":["Program 11111111111111111111111111111111 invoke [1]","Program 11111111111111111111111111111111 success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]","Program log: Instruction: InitializeAccount","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3443 of 999850 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]","Program log: Create","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program log: Instruction: GetAccountDataSize","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 1569 of 986540 compute units","Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program 11111111111111111111111111111111 invoke [2]","Program 11111111111111111111111111111111 success","Program log: Initialize the associated token account","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program log: Instruction: InitializeImmutableOwner","Program log: Please upgrade to SPL Token 2022 for immutable owner support","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 1405 of 979953 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program log: Instruction: InitializeAccount3","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4188 of 976071 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 24807 of 996407 compute units","Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success","Program 675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8 invoke [1]","Program log: ray_log: A0BCDwAAAAAAAQAAAAAAAAABAAAAAAAAAEBCDwAAAAAAJpQvd7KnAAAFQaNhBgAAAKs5+I8BAAAA","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program log: Instruction: Transfer","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4736 of 953441 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]","Program log: Instruction: Transfer","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4645 of 945724 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program 675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8 consumed 31324 of 971600 compute units","Program 675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8 success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]","Program log: Instruction: CloseAccount","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 2915 of 940276 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success"],"postBalances":[18261002,0,2039280,6124800,23357760,16258560,2039280,27410932021,3591360,101977920,101977920,79594560,2039280,2039280,1,934087680,566946180001,731913600,1461600,1141440,3866064002,0,1009200,1141440],"postTokenBalances":[{"accountIndex":2,"mint":"EbjoYBkLftNJtGW56wMYcbBL3qhfuBXnSc3rfMKxLG9e","owner":"6bXq74ihb4kw2oNFswmd3AsvvW4f6wsPhftaVJwFMuqa","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"6710376875","decimals":9,"uiAmount":6.710376875,"uiAmountString":"6.710376875"}},{"accountIndex":6,"mint":"EbjoYBkLftNJtGW56wMYcbBL3qhfuBXnSc3rfMKxLG9e","owner":"5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"184378235247227","decimals":9,"uiAmount":184378.235247227,"uiAmountString":"184378.235247227"}},{"accountIndex":7,"mint":"So11111111111111111111111111111111111111112","owner":"5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"27408892741","decimals":9,"uiAmount":27.408892741,"uiAmountString":"27.408892741"}},{"accountIndex":12,"mint":"EbjoYBkLftNJtGW56wMYcbBL3qhfuBXnSc3rfMKxLG9e","owner":"DNGPcnRfUewQZsKi15Aru6Um72sh31YepYBESSsKFsQQ","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"0","decimals":9,"uiAmount":null,"uiAmountString":"0"}},{"accountIndex":13,"mint":"So11111111111111111111111111111111111111112","owner":"DNGPcnRfUewQZsKi15Aru6Um72sh31YepYBESSsKFsQQ","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"0","decimals":9,"uiAmount":null,"uiAmountString":"0"}}],"preBalances":[21305282,0,0,6124800,23357760,16258560,2039280,27409932021,3591360,101977920,101977920,79594560,2039280,2039280,1,934087680,566946180001,731913600,1461600,1141440,3866064002,0,1009200,1141440],"preTokenBalances":[{"accountIndex":6,"mint":"EbjoYBkLftNJtGW56wMYcbBL3qhfuBXnSc3rfMKxLG9e","owner":"5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"184384945624102","decimals":9,"uiAmount":184384.945624102,"uiAmountString":"184384.945624102"}},{"accountIndex":7,"mint":"So11111111111111111111111111111111111111112","owner":"5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"27407892741","decimals":9,"uiAmount":27.407892741,"uiAmountString":"27.407892741"}},{"accountIndex":12,"mint":"EbjoYBkLftNJtGW56wMYcbBL3qhfuBXnSc3rfMKxLG9e","owner":"DNGPcnRfUewQZsKi15Aru6Um72sh31YepYBESSsKFsQQ","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"0","decimals":9,"uiAmount":null,"uiAmountString":"0"}},{"accountIndex":13,"mint":"So11111111111111111111111111111111111111112","owner":"DNGPcnRfUewQZsKi15Aru6Um72sh31YepYBESSsKFsQQ","programId":"TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","uiTokenAmount":{"amount":"0","decimals":9,"uiAmount":null,"uiAmountString":"0"}}],"rewards":[],"status":{"Ok":null}},"slot":268919763,"transaction":{"message":{"header":{"numReadonlySignedAccounts":0,"numReadonlyUnsignedAccounts":8,"numRequiredSignatures":1},"staticAccountKeys":["6bXq74ihb4kw2oNFswmd3AsvvW4f6wsPhftaVJwFMuqa","8CcLNwL17MGbcn6odGNLZdQsrZSEzztHa5vEHzukEBH","rphMofW2GMBMUXsNKaBJUpXwZxn3YdLNqq7XQdmsdvE","3EtLwth2CAgWu2yLE6FWsPiXGCMjYBeAdCEBBSP7ru9L","8SEaHqAgUWPAoPH4uLkCMk3jpfq7paUBGAGmRFSLsXez","E5R7B1q4BjwiSq3Mz7SkmDVzQKoJrQ7e6zDYK24KCC6J","6WRsQfPEASVEETn92viZvDGRggD7w34ZEQvoM4qQ8PXQ","FxLP4LMK8BimLKFdwGK9Z27gGu3vSnFBJoDjBLY6GYwn","6iNCP7ZRwaNwTVRYwGimxdHWcfbUVsPyn1Fc4vDYqc73","6JR2vmGcdfLcLBi1vZznjmtTErS2Ky8JtAp4D9nkf1Xu","3kHZtGUBpJFb1JVWHnMJPkmgi8dFPfCT8rKjmZauoEX9","BjGBrrHDMWhY1MLgH2KSpfwabGtyW2LDYyYYgkKkrebF","97sAkrLLZm4GWSUivxaEV7eRvS1aUyYswgCQBQGozeyt","5aiMCqEJ9w46cPNzhs4PR6KAv8yEwWcfzuZrKHXTLcKx","11111111111111111111111111111111","TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA","So11111111111111111111111111111111111111112","ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL","EbjoYBkLftNJtGW56wMYcbBL3qhfuBXnSc3rfMKxLG9e","675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8","5Q544fKrFoe6tsEbD7S8EmxGTJYAKtTVhAW5Q5pge4j1","8hy8KUMcfSDgqE9bysBzicgRNM9jfxbBuDVRbygRUT8J"],"recentBlockhash":"4Pqx5dEnpooU9E2sPKyDKcStR1p4D1hkou4BBP4Pja1F","compiledInstructions":[{"programIdIndex":14,"accountKeyIndexes":[0,1],"data":{"type":"Buffer","data":[3,0,0,0,83,35,10,129,176,229,67,103,255,102,165,235,66,180,96,216,103,45,193,99,29,79,71,204,159,42,24,95,180,146,127,81,32,0,0,0,0,0,0,0,55,100,121,114,74,72,99,65,118,106,102,72,122,97,86,80,107,87,89,98,86,110,65,49,54,55,78,116,110,97,78,105,48,96,46,0,0,0,0,0,165,0,0,0,0,0,0,0,6,221,246,225,215,101,161,147,217,203,225,70,206,235,121,172,28,180,133,237,95,91,55,145,58,140,245,133,126,255,0,169]}},{"programIdIndex":15,"accountKeyIndexes":[1,16,0,22],"data":{"type":"Buffer","data":[1]}},{"programIdIndex":17,"accountKeyIndexes":[0,2,0,18,14,15],"data":{"type":"Buffer","data":[]}},{"programIdIndex":19,"accountKeyIndexes":[15,3,20,4,5,6,7,23,8,9,10,11,12,13,21,1,2,0],"data":{"type":"Buffer","data":[9,64,66,15,0,0,0,0,0,1,0,0,0,0,0,0,0]}},{"programIdIndex":15,"accountKeyIndexes":[1,0,0],"data":{"type":"Buffer","data":[9]}}],"addressTableLookups":[{"accountKey":"2immgwYNHBbyVQKVGCEkgWpi53bLwWNRMB5G2nbgYV17","readonlyIndexes":[5,11],"writableIndexes":[]}]},"signatures":["CP6JU5UD26UAVdQW4wuRBNx8UsL5j6roB55t8uNzdVvXzNdaYT3Rtxz1e3KwhSTvfU8usgGePATnEb5w2LRW2pH"]},"version":0}],"msg":"Valid Tx"}
+{"level":30,"time":"2024-05-30T22:30:32.289Z","pid":34476,"hostname":"XBMCServer","msg":"Token Balance Retrieved"}
+{"level":30,"time":"2024-05-30T22:30:32.289Z","pid":34476,"hostname":"XBMCServer","Token Balance":6.710376875,"msg":"Token Balance"}
+{"level":30,"time":"2024-05-30T22:30:32.289Z","pid":34476,"hostname":"XBMCServer","msg":"Time to sell Meme"}
+{"level":30,"time":"2024-05-30T22:30:32.318Z","pid":34476,"hostname":"XBMCServer","msg":"Trying to swap Meme for SOL"}
+{"level":30,"time":"2024-05-30T22:30:32.480Z","pid":34476,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:30:32.403Z","End Time":1717108232480,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:30:32.480Z","pid":34476,"hostname":"XBMCServer","Attempted Tx":["3wAPGkVXkSaCc9saJguSdcUP7Jm55rcLeTCLkb28HiUhcCX2qGXppHavRaoeqUB946WhQ3ACu443gwQ5rgThYQqH"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:30:32.480Z","pid":34476,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:31:42.278Z","pid":34476,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":69.875,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T22:31:42.278Z","pid":34476,"hostname":"XBMCServer","Swap Meme for Sol txids":["3wAPGkVXkSaCc9saJguSdcUP7Jm55rcLeTCLkb28HiUhcCX2qGXppHavRaoeqUB946WhQ3ACu443gwQ5rgThYQqH","expired"],"msg":"Swap Meme to SOL TxnIDs"}
+{"level":30,"time":"2024-05-30T22:31:42.278Z","pid":34476,"hostname":"XBMCServer","msg":"Swap Meme for Sol Block Expired. Retrying Swap."}
+{"level":30,"time":"2024-05-30T22:31:42.303Z","pid":34476,"hostname":"XBMCServer","msg":"Trying to swap Meme for SOL"}
+{"level":30,"time":"2024-05-30T22:31:42.994Z","pid":34476,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:31:42.892Z","End Time":1717108302994,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:31:42.994Z","pid":34476,"hostname":"XBMCServer","Attempted Tx":["3RaX41DieXXBAas3jA3sJMtp7u4LzfpNfG6NmdwGHs9ghzcxCnCmf1v8ZxnsNCubGthvFcs8RbC5dXjcfHr43VqQ"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:31:42.994Z","pid":34476,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:32:47.785Z","pid":34476,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":64.893,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T22:32:47.785Z","pid":34476,"hostname":"XBMCServer","Swap Meme for Sol txids":["3RaX41DieXXBAas3jA3sJMtp7u4LzfpNfG6NmdwGHs9ghzcxCnCmf1v8ZxnsNCubGthvFcs8RbC5dXjcfHr43VqQ","expired"],"msg":"Swap Meme to SOL TxnIDs"}
+{"level":30,"time":"2024-05-30T22:32:47.785Z","pid":34476,"hostname":"XBMCServer","msg":"Swap Meme for Sol Block Expired. Retrying Swap."}
+{"level":30,"time":"2024-05-30T22:32:47.809Z","pid":34476,"hostname":"XBMCServer","msg":"Trying to swap Meme for SOL"}
+{"level":30,"time":"2024-05-30T22:32:48.460Z","pid":34476,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:32:48.406Z","End Time":1717108368460,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:32:48.460Z","pid":34476,"hostname":"XBMCServer","Attempted Tx":["3RUgdbbbeQvFJ1WNbFqV93c4DnKGyi2tRb2ZkNV8eTJBJvHQz2kNyZZ9YdJ2XmxH7AJ6vUmCRPx4rVxD9f5Jk6xQ"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:32:48.460Z","pid":34476,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:33:53.435Z","pid":34476,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":65.029,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T22:33:53.435Z","pid":34476,"hostname":"XBMCServer","Swap Meme for Sol txids":["3RUgdbbbeQvFJ1WNbFqV93c4DnKGyi2tRb2ZkNV8eTJBJvHQz2kNyZZ9YdJ2XmxH7AJ6vUmCRPx4rVxD9f5Jk6xQ","expired"],"msg":"Swap Meme to SOL TxnIDs"}
+{"level":30,"time":"2024-05-30T22:33:53.435Z","pid":34476,"hostname":"XBMCServer","msg":"Swap Meme for Sol Block Expired. Retrying Swap."}
+{"level":30,"time":"2024-05-30T22:33:53.457Z","pid":34476,"hostname":"XBMCServer","msg":"Trying to swap Meme for SOL"}
+{"level":30,"time":"2024-05-30T22:33:54.145Z","pid":34476,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:33:53.510Z","End Time":1717108434145,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:33:54.145Z","pid":34476,"hostname":"XBMCServer","Attempted Tx":["521V8SDAWPCVthZqFzqm9WUaLoDYdyeo38b3rM2MstKBkdxhruhugRBdYKiTPs23faNL1LjKKLp9DAWwNvTMrWqd"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:33:54.145Z","pid":34476,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:35:03.208Z","pid":34476,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":69.698,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T22:35:03.208Z","pid":34476,"hostname":"XBMCServer","Swap Meme for Sol txids":["521V8SDAWPCVthZqFzqm9WUaLoDYdyeo38b3rM2MstKBkdxhruhugRBdYKiTPs23faNL1LjKKLp9DAWwNvTMrWqd","expired"],"msg":"Swap Meme to SOL TxnIDs"}
+{"level":30,"time":"2024-05-30T22:35:03.208Z","pid":34476,"hostname":"XBMCServer","msg":"Swap Meme for Sol Block Expired. Retrying Swap."}
+{"level":30,"time":"2024-05-30T22:35:03.231Z","pid":34476,"hostname":"XBMCServer","msg":"Trying to swap Meme for SOL"}
+{"level":30,"time":"2024-05-30T22:35:03.929Z","pid":34476,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:35:03.822Z","End Time":1717108503929,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:35:03.929Z","pid":34476,"hostname":"XBMCServer","Attempted Tx":["FtjW5RVp3TVe9vRxEWMQVqRtx7g83s4V2bVAwMa1tGcrqUwrVhmxspVbqoHbKid3HmAym6Vz4L9qb8hJ26Z4oAq"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:35:03.929Z","pid":34476,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:36:12.299Z","pid":34476,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":68.477,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T22:36:12.299Z","pid":34476,"hostname":"XBMCServer","Swap Meme for Sol txids":["FtjW5RVp3TVe9vRxEWMQVqRtx7g83s4V2bVAwMa1tGcrqUwrVhmxspVbqoHbKid3HmAym6Vz4L9qb8hJ26Z4oAq","expired"],"msg":"Swap Meme to SOL TxnIDs"}
+{"level":30,"time":"2024-05-30T22:36:12.299Z","pid":34476,"hostname":"XBMCServer","msg":"Swap Meme for Sol Block Expired. Retrying Swap."}
+{"level":30,"time":"2024-05-30T22:36:12.323Z","pid":34476,"hostname":"XBMCServer","msg":"Trying to swap Meme for SOL"}
+{"level":30,"time":"2024-05-30T22:36:12.949Z","pid":34476,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:36:12.898Z","End Time":1717108572949,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:36:12.949Z","pid":34476,"hostname":"XBMCServer","Attempted Tx":["3EnmzFSo7jySZduJ3NYbNQ5UvjjKqQBjiA4pc63JeRKJvwojvz1BshEJ4AgmcofsiuugvcbzY9sWGBC2htXycd3B"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:36:12.949Z","pid":34476,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:37:22.490Z","pid":34476,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":69.592,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T22:37:22.490Z","pid":34476,"hostname":"XBMCServer","Swap Meme for Sol txids":["3EnmzFSo7jySZduJ3NYbNQ5UvjjKqQBjiA4pc63JeRKJvwojvz1BshEJ4AgmcofsiuugvcbzY9sWGBC2htXycd3B","expired"],"msg":"Swap Meme to SOL TxnIDs"}
+{"level":30,"time":"2024-05-30T22:37:22.490Z","pid":34476,"hostname":"XBMCServer","msg":"Swap Meme for Sol Block Expired. Retrying Swap."}
+{"level":30,"time":"2024-05-30T22:37:22.513Z","pid":34476,"hostname":"XBMCServer","msg":"Trying to swap Meme for SOL"}
+{"level":30,"time":"2024-05-30T22:37:23.197Z","pid":34476,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:37:22.567Z","End Time":1717108643197,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:37:23.197Z","pid":34476,"hostname":"XBMCServer","Attempted Tx":["2DMHmo3MMdRPfpo9veGG3fffFygWRaEn8CtsqdvbjEanM18HNKAbqnCk2yHAvuhYnnA5fiyGbLX7mjtn5yseWE5u"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:37:23.197Z","pid":34476,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:38:36.115Z","pid":34476,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":73.548,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T22:38:36.115Z","pid":34476,"hostname":"XBMCServer","Swap Meme for Sol txids":["2DMHmo3MMdRPfpo9veGG3fffFygWRaEn8CtsqdvbjEanM18HNKAbqnCk2yHAvuhYnnA5fiyGbLX7mjtn5yseWE5u","expired"],"msg":"Swap Meme to SOL TxnIDs"}
+{"level":30,"time":"2024-05-30T22:38:36.115Z","pid":34476,"hostname":"XBMCServer","msg":"Swap Meme for Sol Block Expired. Retrying Swap."}
+{"level":30,"time":"2024-05-30T22:38:36.140Z","pid":34476,"hostname":"XBMCServer","msg":"Trying to swap Meme for SOL"}
+{"level":30,"time":"2024-05-30T22:38:36.763Z","pid":34476,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:38:36.191Z","End Time":1717108716763,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:38:36.764Z","pid":34476,"hostname":"XBMCServer","Attempted Tx":["q11XhJqCNgS5qU4zW5yFxNtLqMe2MWwiZsDcK9WtuUiJTj1FnrhGt3ATp34q94Sp4LvBE8sH172GPP778BXwUub"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:38:36.764Z","pid":34476,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:39:47.453Z","pid":34476,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":71.262,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T22:39:47.454Z","pid":34476,"hostname":"XBMCServer","Swap Meme for Sol txids":["q11XhJqCNgS5qU4zW5yFxNtLqMe2MWwiZsDcK9WtuUiJTj1FnrhGt3ATp34q94Sp4LvBE8sH172GPP778BXwUub","expired"],"msg":"Swap Meme to SOL TxnIDs"}
+{"level":30,"time":"2024-05-30T22:39:47.454Z","pid":34476,"hostname":"XBMCServer","msg":"Swap Meme for Sol Block Expired. Retrying Swap."}
+{"level":30,"time":"2024-05-30T22:39:47.476Z","pid":34476,"hostname":"XBMCServer","msg":"Trying to swap Meme for SOL"}
+{"level":30,"time":"2024-05-30T22:39:48.119Z","pid":34476,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:39:47.535Z","End Time":1717108788119,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:39:48.119Z","pid":34476,"hostname":"XBMCServer","Attempted Tx":["2miAgz62GsesATAngdBq7XZFjGUjsTzaEUofLkxv1Ui76GfS2NNxpadMSZU2gqajW4YS7KEufKpdRx3t2sj17Chz"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:39:48.119Z","pid":34476,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:40:56.027Z","pid":34476,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":68.492,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T22:40:56.027Z","pid":34476,"hostname":"XBMCServer","Swap Meme for Sol txids":["2miAgz62GsesATAngdBq7XZFjGUjsTzaEUofLkxv1Ui76GfS2NNxpadMSZU2gqajW4YS7KEufKpdRx3t2sj17Chz","expired"],"msg":"Swap Meme to SOL TxnIDs"}
+{"level":30,"time":"2024-05-30T22:40:56.027Z","pid":34476,"hostname":"XBMCServer","msg":"Swap Meme for Sol Block Expired. Retrying Swap."}
+{"level":30,"time":"2024-05-30T22:40:56.050Z","pid":34476,"hostname":"XBMCServer","msg":"Trying to swap Meme for SOL"}
+{"level":30,"time":"2024-05-30T22:40:56.215Z","pid":34476,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:40:56.108Z","End Time":1717108856215,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:40:56.215Z","pid":34476,"hostname":"XBMCServer","Attempted Tx":["31Amxv5nJWBrtVvZYgEcBUrNxbDZUBLQbPnQ1CE2VuDCQoGSKKwMTu2qpFHb8GPy7G4npm23WDWT6aj1YCQ6weR5"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:40:56.215Z","pid":34476,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:42:05.229Z","pid":34476,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":69.121,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T22:42:05.229Z","pid":34476,"hostname":"XBMCServer","Swap Meme for Sol txids":["31Amxv5nJWBrtVvZYgEcBUrNxbDZUBLQbPnQ1CE2VuDCQoGSKKwMTu2qpFHb8GPy7G4npm23WDWT6aj1YCQ6weR5","expired"],"msg":"Swap Meme to SOL TxnIDs"}
+{"level":30,"time":"2024-05-30T22:42:05.229Z","pid":34476,"hostname":"XBMCServer","msg":"Swap Meme for Sol Block Expired. Retrying Swap."}
+{"level":30,"time":"2024-05-30T22:42:05.252Z","pid":34476,"hostname":"XBMCServer","msg":"Trying to swap Meme for SOL"}
+{"level":30,"time":"2024-05-30T22:42:05.893Z","pid":34476,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:42:05.838Z","End Time":1717108925893,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:42:05.893Z","pid":34476,"hostname":"XBMCServer","Attempted Tx":["5ENuLPmi4EoNZfSr4y3Mf39HRGh5s1nMWELzFZg3ZkxBewRwmaZrUGPoZc9tUuSbDHm8Mzn3yWsD9ozKaX6buA76"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:42:05.893Z","pid":34476,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:43:10.553Z","pid":34476,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":64.715,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T22:43:10.553Z","pid":34476,"hostname":"XBMCServer","Swap Meme for Sol txids":["5ENuLPmi4EoNZfSr4y3Mf39HRGh5s1nMWELzFZg3ZkxBewRwmaZrUGPoZc9tUuSbDHm8Mzn3yWsD9ozKaX6buA76","expired"],"msg":"Swap Meme to SOL TxnIDs"}
+{"level":30,"time":"2024-05-30T22:43:10.553Z","pid":34476,"hostname":"XBMCServer","msg":"Swap Meme for Sol Block Expired. Retrying Swap."}
+{"level":30,"time":"2024-05-30T22:43:10.582Z","pid":34476,"hostname":"XBMCServer","msg":"Trying to swap Meme for SOL"}
+{"level":30,"time":"2024-05-30T22:43:10.747Z","pid":34476,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:43:10.640Z","End Time":1717108990747,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:43:10.747Z","pid":34476,"hostname":"XBMCServer","Attempted Tx":["2CzceEzAsriPKpgVYVWV38tRKURGUKyRy9UvJkTjdXB9QeKckErD7sP7aYx7qRmqC3u8HVNXY93YkfcbDa6n4HrB"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:43:10.747Z","pid":34476,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:44:14.847Z","pid":34476,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":64.206,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T22:44:14.847Z","pid":34476,"hostname":"XBMCServer","Swap Meme for Sol txids":["2CzceEzAsriPKpgVYVWV38tRKURGUKyRy9UvJkTjdXB9QeKckErD7sP7aYx7qRmqC3u8HVNXY93YkfcbDa6n4HrB","expired"],"msg":"Swap Meme to SOL TxnIDs"}
+{"level":30,"time":"2024-05-30T22:44:14.847Z","pid":34476,"hostname":"XBMCServer","msg":"Swap Meme for Sol Block Expired. Retrying Swap."}
+{"level":30,"time":"2024-05-30T22:44:14.870Z","pid":34476,"hostname":"XBMCServer","msg":"Trying to swap Meme for SOL"}
+{"level":30,"time":"2024-05-30T22:44:15.563Z","pid":34476,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:44:15.456Z","End Time":1717109055563,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:44:15.563Z","pid":34476,"hostname":"XBMCServer","Attempted Tx":["4TGEUFz9nvJ8aRA6FXZzmHHu7kLotHeXVCq7LrJwFkd5R7dsFMecznNyV5rB6LJg1S9oqQtWmpuhggbKviGnLgp2"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:44:15.563Z","pid":34476,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:45:19.183Z","pid":34476,"hostname":"XBMCServer","Blockhash has expired. Elapsed Time (seconds)":63.727,"msg":"Blockhash has expired"}
+{"level":30,"time":"2024-05-30T22:45:19.183Z","pid":34476,"hostname":"XBMCServer","Swap Meme for Sol txids":["4TGEUFz9nvJ8aRA6FXZzmHHu7kLotHeXVCq7LrJwFkd5R7dsFMecznNyV5rB6LJg1S9oqQtWmpuhggbKviGnLgp2","expired"],"msg":"Swap Meme to SOL TxnIDs"}
+{"level":30,"time":"2024-05-30T22:45:19.183Z","pid":34476,"hostname":"XBMCServer","msg":"Swap Meme for Sol Block Expired. Retrying Swap."}
+{"level":30,"time":"2024-05-30T22:45:19.206Z","pid":34476,"hostname":"XBMCServer","msg":"Trying to swap Meme for SOL"}
+{"level":30,"time":"2024-05-30T22:45:19.885Z","pid":34476,"hostname":"XBMCServer","SendTX Start Time":"2024-05-30T22:45:19.258Z","End Time":1717109119885,"msg":"SendTX start and end time"}
+{"level":30,"time":"2024-05-30T22:45:19.885Z","pid":34476,"hostname":"XBMCServer","Attempted Tx":["z8tVnenKt7jcE1mmEz8SQELh4npy3SjDyHQi2XXV1KXAGodgeAFDk3BUjK6yCmGCP8ZcCL2hRygn82jmt5aKp6b"],"msg":"Attempted Tx IDs"}
+{"level":30,"time":"2024-05-30T22:45:19.885Z","pid":34476,"hostname":"XBMCServer","msg":"Start tx success or blockhash expired check."}
+{"level":30,"time":"2024-05-30T22:45:26.992Z","pid":34476,"hostname":"XBMCServer","Tx Success. Elapsed Time (seconds)":7.734,"msg":"Tx Success"}
+{"level":30,"time":"2024-05-30T22:45:26.992Z","pid":34476,"hostname":"XBMCServer","Swap Meme for Sol txids":["z8tVnenKt7jcE1mmEz8SQELh4npy3SjDyHQi2XXV1KXAGodgeAFDk3BUjK6yCmGCP8ZcCL2hRygn82jmt5aKp6b"],"msg":"Swap Meme to SOL TxnIDs"}
+{"level":30,"time":"2024-05-30T22:45:26.992Z","pid":34476,"hostname":"XBMCServer","msg":"Start get balances"}
+{"level":30,"time":"2024-05-30T22:45:27.524Z","pid":34476,"hostname":"XBMCServer","msg":"Sold Meme for SOL"}
+{"level":30,"time":"2024-05-30T22:45:27.524Z","pid":34476,"hostname":"XBMCServer","msg":"Current SOL Balance"}
+{"level":30,"time":"2024-05-30T23:00:46.075Z","pid":32600,"hostname":"XBMCServer","msg":"Starting manual sell"}
+{"level":30,"time":"2024-05-30T23:00:46.076Z","pid":32600,"hostname":"XBMCServer","wallet tokens":{},"msg":"Wallet Tokens"}
+{"level":30,"time":"2024-05-30T23:03:41.322Z","pid":38104,"hostname":"XBMCServer","msg":"Starting manual sell"}
+{"level":30,"time":"2024-05-30T23:03:41.323Z","pid":38104,"hostname":"XBMCServer","wallet tokens":{},"msg":"Wallet Tokens"}
+{"level":30,"time":"2024-05-30T23:05:20.683Z","pid":26364,"hostname":"XBMCServer","msg":"Starting manual sell"}
+{"level":30,"time":"2024-05-30T23:06:36.975Z","pid":20536,"hostname":"XBMCServer","wallet tokens":{},"msg":"Wallet Tokens"}
+{"level":30,"time":"2024-05-30T23:07:20.479Z","pid":28892,"hostname":"XBMCServer","wallet tokens":{},"msg":"Wallet Tokens"}
+{"level":30,"time":"2024-05-31T14:35:23.002Z","pid":3620,"hostname":"XBMCServer","wallet tokens":{},"msg":"Wallet Tokens"}
+{"level":30,"time":"2024-05-31T14:44:51.839Z","pid":38004,"hostname":"XBMCServer","wallet tokens":{},"msg":"Wallet Tokens"}
+{"level":30,"time":"2024-05-31T16:15:06.119Z","pid":24212,"hostname":"XBMCServer","Found Token Accounts":11,"msg":"Found token accounts"}
+{"level":30,"time":"2024-05-31T16:21:05.276Z","pid":25304,"hostname":"XBMCServer","Found Token Accounts":11,"msg":"Found token accounts"}
+{"level":30,"time":"2024-05-31T16:21:19.519Z","pid":17144,"hostname":"XBMCServer","Found Token Accounts":11,"msg":"Found token accounts"}
+{"level":30,"time":"2024-05-31T16:21:53.404Z","pid":29184,"hostname":"XBMCServer","Found Token Accounts":11,"msg":"Found token accounts"}
+{"level":30,"time":"2024-05-31T16:22:11.792Z","pid":31204,"hostname":"XBMCServer","Found Token Accounts":11,"msg":"Found token accounts"}
+{"level":30,"time":"2024-05-31T16:22:11.793Z","pid":31204,"hostname":"XBMCServer","Token Account":"7h6j27ZkGcCLjPqeH413QnnA5oMJ8nYDh5RLjbBddRB9","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:22:11.793Z","pid":31204,"hostname":"XBMCServer","Token Mint":"A4AAdnjnpb24TYCQ21T4onp6hFU8BYXinM3EdHZCG46R","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:22:11.793Z","pid":31204,"hostname":"XBMCServer","msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:22:11.793Z","pid":31204,"hostname":"XBMCServer","Token Account":"E9ieXLNYBXC9uBHeqEw4J8KCsVbmhr5Lr6v93LyKkuWD","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:22:11.793Z","pid":31204,"hostname":"XBMCServer","Token Mint":"2kLGbfu1oD4CTj1yr9ZPCzDqGVFWaMDNGNVnWdZoxiSj","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:22:11.793Z","pid":31204,"hostname":"XBMCServer","msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:22:11.793Z","pid":31204,"hostname":"XBMCServer","Token Account":"D3jPMsAwCmxuVZSYNcPYYCFaJiH74SmAP34RFeYSPtTJ","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:22:11.793Z","pid":31204,"hostname":"XBMCServer","Token Mint":"4gX4kBiQp69nmChpptadrPGaYgJBtojc2Gcfnw2KDbET","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:22:11.793Z","pid":31204,"hostname":"XBMCServer","msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:22:11.793Z","pid":31204,"hostname":"XBMCServer","Token Account":"rphMofW2GMBMUXsNKaBJUpXwZxn3YdLNqq7XQdmsdvE","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:22:11.793Z","pid":31204,"hostname":"XBMCServer","Token Mint":"EbjoYBkLftNJtGW56wMYcbBL3qhfuBXnSc3rfMKxLG9e","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:22:11.793Z","pid":31204,"hostname":"XBMCServer","msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:22:11.793Z","pid":31204,"hostname":"XBMCServer","Token Account":"BmPWfofU2xiBb3uvfKegVbnBb7zrysnGfuUBfxne1oPs","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","Token Mint":"3y9t7HRU8mJAnU61Hboy4KjTLbUhadYUSjNV2oqyS1Rz","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","Token Account":"22ccmywoACibNTrQX58vAMCgBHBSc144VC2iiLJR52Tx","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","Token Mint":"Af2Uju862AiViGRfyr831LjwrA5CNxnGhfTs1NL3R1v2","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","Token Account":"6yGeeFZw88ERYsaxvucoLDsFyZotmBUCyh66Lj3LyoT3","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","Token Mint":"GzD8YbYZ8cK9EHNmEribxG7H4kXd9b58ruc8e5SAgLN7","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","Token Account":"64WN7DfyGdDTX2TU4NQPdfRH3oXeDXxdC59rKZ75mxHu","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","Token Mint":"C9KyRWfY4zwB1o3MhNDWpNUHKQNsmpxxwVG3uhNx5F3s","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","Token Account":"6NySVTQcrboe8rimE3Xa3sXDKgtxQ38BWF1GodjbAV4N","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","Token Mint":"AHLgYoaju424dTEHpswK5toPzH1Wmi7asgxegyXeLDhb","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","Token Account":"A2hrHCQsQUepcodBCFa9MMNd7zQEiKpKKQfCUVYbGxVr","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","Token Mint":"9ya5Ef4z3vQwTUzfWVP6YuRNNYVWT3TFEzmTSbvyRPBm","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","Token Account":"H2PyiTRtR2okYAStkn8Wg49iKKs8Qm4n7aspz4jxhmgm","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","Token Mint":"EZxr562jiDhyfj95HDH9KBtrxzthFVS7oHQskHxTpTh2","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:22:11.794Z","pid":31204,"hostname":"XBMCServer","msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:25:22.971Z","pid":24004,"hostname":"XBMCServer","Found Token Accounts":1,"msg":"Found token accounts"}
+{"level":30,"time":"2024-05-31T16:25:22.971Z","pid":24004,"hostname":"XBMCServer","Token Account":"BmPWfofU2xiBb3uvfKegVbnBb7zrysnGfuUBfxne1oPs","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:25:22.971Z","pid":24004,"hostname":"XBMCServer","Token Mint":"3y9t7HRU8mJAnU61Hboy4KjTLbUhadYUSjNV2oqyS1Rz","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:25:22.971Z","pid":24004,"hostname":"XBMCServer","Token Balance":{"amount":"14090390580491","decimals":9,"uiAmount":14090.390580491,"uiAmountString":"14090.390580491"},"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:26:31.457Z","pid":37328,"hostname":"XBMCServer","Found Token Accounts":1,"msg":"Found token accounts"}
+{"level":30,"time":"2024-05-31T16:26:31.457Z","pid":37328,"hostname":"XBMCServer","Token Account":"BmPWfofU2xiBb3uvfKegVbnBb7zrysnGfuUBfxne1oPs","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:26:31.457Z","pid":37328,"hostname":"XBMCServer","Token Mint":"3y9t7HRU8mJAnU61Hboy4KjTLbUhadYUSjNV2oqyS1Rz","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:26:31.457Z","pid":37328,"hostname":"XBMCServer","Token Balance":{"amount":"14090390580491","decimals":9,"uiAmount":14090.390580491,"uiAmountString":"14090.390580491"},"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:28:48.233Z","pid":16824,"hostname":"XBMCServer","Found Token Accounts":1,"msg":"Found token accounts"}
+{"level":30,"time":"2024-05-31T16:28:48.234Z","pid":16824,"hostname":"XBMCServer","Token Account":"BmPWfofU2xiBb3uvfKegVbnBb7zrysnGfuUBfxne1oPs","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:28:48.234Z","pid":16824,"hostname":"XBMCServer","Token Mint":"3y9t7HRU8mJAnU61Hboy4KjTLbUhadYUSjNV2oqyS1Rz","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:28:48.234Z","pid":16824,"hostname":"XBMCServer","Token Balance":14090.390580491,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:29:49.705Z","pid":12756,"hostname":"XBMCServer","Found Token Accounts":11,"msg":"Found token accounts"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Account":"7h6j27ZkGcCLjPqeH413QnnA5oMJ8nYDh5RLjbBddRB9","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Mint":"A4AAdnjnpb24TYCQ21T4onp6hFU8BYXinM3EdHZCG46R","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Balance":0,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Account":"E9ieXLNYBXC9uBHeqEw4J8KCsVbmhr5Lr6v93LyKkuWD","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Mint":"2kLGbfu1oD4CTj1yr9ZPCzDqGVFWaMDNGNVnWdZoxiSj","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Balance":0,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Account":"22ccmywoACibNTrQX58vAMCgBHBSc144VC2iiLJR52Tx","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Mint":"Af2Uju862AiViGRfyr831LjwrA5CNxnGhfTs1NL3R1v2","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Balance":0,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Account":"D3jPMsAwCmxuVZSYNcPYYCFaJiH74SmAP34RFeYSPtTJ","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Mint":"4gX4kBiQp69nmChpptadrPGaYgJBtojc2Gcfnw2KDbET","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Balance":2257.367708,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Account":"6yGeeFZw88ERYsaxvucoLDsFyZotmBUCyh66Lj3LyoT3","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Mint":"GzD8YbYZ8cK9EHNmEribxG7H4kXd9b58ruc8e5SAgLN7","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Balance":415321.642366,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Account":"64WN7DfyGdDTX2TU4NQPdfRH3oXeDXxdC59rKZ75mxHu","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Mint":"C9KyRWfY4zwB1o3MhNDWpNUHKQNsmpxxwVG3uhNx5F3s","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Balance":481.651992469,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Account":"6NySVTQcrboe8rimE3Xa3sXDKgtxQ38BWF1GodjbAV4N","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Mint":"AHLgYoaju424dTEHpswK5toPzH1Wmi7asgxegyXeLDhb","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Balance":0,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Account":"BmPWfofU2xiBb3uvfKegVbnBb7zrysnGfuUBfxne1oPs","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Mint":"3y9t7HRU8mJAnU61Hboy4KjTLbUhadYUSjNV2oqyS1Rz","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Balance":14090.390580491,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Account":"rphMofW2GMBMUXsNKaBJUpXwZxn3YdLNqq7XQdmsdvE","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Mint":"EbjoYBkLftNJtGW56wMYcbBL3qhfuBXnSc3rfMKxLG9e","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:29:49.706Z","pid":12756,"hostname":"XBMCServer","Token Balance":0,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:29:49.707Z","pid":12756,"hostname":"XBMCServer","Token Account":"H2PyiTRtR2okYAStkn8Wg49iKKs8Qm4n7aspz4jxhmgm","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:29:49.707Z","pid":12756,"hostname":"XBMCServer","Token Mint":"EZxr562jiDhyfj95HDH9KBtrxzthFVS7oHQskHxTpTh2","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:29:49.707Z","pid":12756,"hostname":"XBMCServer","Token Balance":2567.736429738,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:29:49.707Z","pid":12756,"hostname":"XBMCServer","Token Account":"A2hrHCQsQUepcodBCFa9MMNd7zQEiKpKKQfCUVYbGxVr","msg":"Token account address"}
+{"level":30,"time":"2024-05-31T16:29:49.707Z","pid":12756,"hostname":"XBMCServer","Token Mint":"9ya5Ef4z3vQwTUzfWVP6YuRNNYVWT3TFEzmTSbvyRPBm","msg":"Token address"}
+{"level":30,"time":"2024-05-31T16:29:49.707Z","pid":12756,"hostname":"XBMCServer","Token Balance":0,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:44:22.019Z","pid":36920,"hostname":"XBMCServer","msg":"Start get wallet meme token balance."}
+{"level":30,"time":"2024-05-31T16:44:22.020Z","pid":36920,"hostname":"XBMCServer","Token Balance":14090.390580491,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:45:46.994Z","pid":16932,"hostname":"XBMCServer","Token Balance":{},"msg":"Token Balance"}
+{"level":30,"time":"2024-05-31T16:45:47.148Z","pid":16932,"hostname":"XBMCServer","msg":"Start get wallet meme token balance."}
+{"level":30,"time":"2024-05-31T16:45:47.148Z","pid":16932,"hostname":"XBMCServer","Token Balance":14090.390580491,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:49:41.872Z","pid":36844,"hostname":"XBMCServer","Token Balance":{},"msg":"Token Balance"}
+{"level":30,"time":"2024-05-31T16:49:42.032Z","pid":36844,"hostname":"XBMCServer","msg":"Start get wallet meme token balance."}
+{"level":30,"time":"2024-05-31T16:49:42.032Z","pid":36844,"hostname":"XBMCServer","Token Balance":14090.390580491,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:54:10.702Z","pid":36076,"hostname":"XBMCServer","msg":"Start get wallet meme token balance."}
+{"level":30,"time":"2024-05-31T16:54:10.702Z","pid":36076,"hostname":"XBMCServer","Token Balance":14090.390580491,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:54:10.702Z","pid":36076,"hostname":"XBMCServer","Token Balance":14090.390580491,"msg":"Token Balance"}
+{"level":30,"time":"2024-05-31T16:55:01.596Z","pid":11756,"hostname":"XBMCServer","msg":"Start get wallet meme token balance."}
+{"level":30,"time":"2024-05-31T16:55:01.597Z","pid":11756,"hostname":"XBMCServer","Token Balance":14090.390580491,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T16:55:01.597Z","pid":11756,"hostname":"XBMCServer","Token Balance":14090.390580491,"msg":"Token Balance"}
+{"level":30,"time":"2024-05-31T17:13:11.595Z","pid":19736,"hostname":"XBMCServer","msg":"Start get wallet meme token balance."}
+{"level":30,"time":"2024-05-31T17:13:11.595Z","pid":19736,"hostname":"XBMCServer","Token Balance":14090.390580491,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T17:13:11.595Z","pid":19736,"hostname":"XBMCServer","msg":"Token Balance Retrieved"}
+{"level":30,"time":"2024-05-31T17:13:11.596Z","pid":19736,"hostname":"XBMCServer","msg":"SOL Price Retrieved"}
+{"level":30,"time":"2024-05-31T17:13:11.596Z","pid":19736,"hostname":"XBMCServer","SOL Price in USD":{},"msg":"SOL Price in USD"}
+{"level":30,"time":"2024-05-31T17:13:11.596Z","pid":19736,"hostname":"XBMCServer","Meme Buy Price":7.09703534680267e-8,"msg":"Meme Buy Price"}
+{"level":30,"time":"2024-05-31T17:13:11.596Z","pid":19736,"hostname":"XBMCServer","Meme Buy Qty":14090.390580491,"msg":"Meme Buy Qty"}
+{"level":30,"time":"2024-05-31T17:13:11.672Z","pid":19736,"hostname":"XBMCServer","current price":"165.42","msg":"Current SOL Price in USD"}
+{"level":30,"time":"2024-05-31T17:18:36.951Z","pid":20836,"hostname":"XBMCServer","msg":"Start get wallet meme token balance."}
+{"level":30,"time":"2024-05-31T17:18:36.951Z","pid":20836,"hostname":"XBMCServer","Token Balance":14090.390580491,"msg":"Token balance"}
+{"level":30,"time":"2024-05-31T17:18:36.951Z","pid":20836,"hostname":"XBMCServer","msg":"Token Balance Retrieved"}
+{"level":30,"time":"2024-05-31T17:18:37.028Z","pid":20836,"hostname":"XBMCServer","current price":"165.53","msg":"Current SOL Price in USD"}
+{"level":30,"time":"2024-05-31T17:18:37.028Z","pid":20836,"hostname":"XBMCServer","msg":"SOL Price Retrieved"}
+{"level":30,"time":"2024-05-31T17:18:37.028Z","pid":20836,"hostname":"XBMCServer","SOL Price in USD":"165.53","msg":"SOL Price in USD"}
+{"level":30,"time":"2024-05-31T17:18:37.028Z","pid":20836,"hostname":"XBMCServer","Meme Buy Price":7.09703534680267e-8,"msg":"Meme Buy Price"}
+{"level":30,"time":"2024-05-31T17:18:37.028Z","pid":20836,"hostname":"XBMCServer","Meme Buy Qty":14090.390580491,"msg":"Meme Buy Qty"}

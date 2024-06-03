@@ -6,4 +6,4 @@
 .env*
 
 # Logs
-app.log
+.log*

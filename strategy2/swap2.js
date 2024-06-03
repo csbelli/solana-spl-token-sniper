@@ -42,18 +42,18 @@ function swapOnlyAmm(input) {
     });
 }
 
-function swapSolForMeme(poolKeys, signature) {
+function swapSolForMeme(poolKeys, signature, memeTokenAddr, snipeLaunch) {
     return __awaiter(this, void 0, void 0, function* () {
         const ownerAddress = config_1.ownerAddress;
         const inputToken = solToken;
         const inputTokenAmount = new raydium_sdk_1.TokenAmount(inputToken, LAMPORTS_PER_SOL * buyAmtSol);
-        const outputToken = new raydium_sdk_1.Token(raydium_sdk_1.TOKEN_PROGRAM_ID, new web3.PublicKey(poolKeys.baseMint.toString()), poolKeys.lpDecimals);
-        const slippage = new raydium_sdk_1.Percent(15, 100);
+        const outputToken = new raydium_sdk_1.Token(raydium_sdk_1.TOKEN_PROGRAM_ID, new web3.PublicKey(memeTokenAddr), poolKeys.lpDecimals);
+        const slippage = new raydium_sdk_1.Percent(100, 100);
         const walletTokenAccounts = yield (0, util_1.getWalletTokenAccount)(config_1.connection, config_1.wallet.publicKey);
 
         swapOnlyAmm({
             poolKeys,
-            tokenAddress: poolKeys.baseMint.toString(), 
+            tokenAddress: memeTokenAddr, 
             inputTokenAmount,
             slippage,
             walletTokenAccounts,
@@ -61,34 +61,48 @@ function swapSolForMeme(poolKeys, signature) {
             outputToken
         }).then(({ txids }) => {
             /** continue with txids */
-            logger.info({'Swap Sol for Meme txids' : [txids]}, "SOL to Meme TxnIDs");
+            logger.info({'Swap Sol for Meme txids' : txids}, "SOL to Meme TxnIDs");
             if(txids.length === 1){
                 //monitorTokenSell(txids[0], poolKeys.baseMint.toString(), ownerAddress, poolKeys.baseVault.toString(), poolKeys.quoteVault.toString());
-                monitorTokenSell(txids[0], poolKeys, ownerAddress, signature);
+                monitorTokenSell(txids[0], poolKeys, ownerAddress, signature, memeTokenAddr);
+            } else if (txids.length > 1) {
+                if (snipeLaunch){
+                    logger.info("Swap Sol for Meme Block Expired - Sniping - Retry Swap");
+                    swapSolForMeme(poolKeys, signature, memeTokenAddr, snipeLaunch);
+                } else {
+                    logger.info("Swap Sol for Meme Block Expired - Not Sniping - Skipping Token");
+                }
             }
         }).catch(error => {
             //logger.info({"Signatures":[signature]}, "Signatures");
             logger.error(error, "Error swapping SOL for Meme");
-            swapSolForMeme(poolKeys, signature);
+
+            if (error.message && error.message.includes("Error processing Instruction 4")){
+                logger.info("Transaction contains errors, skipping token.");
+            } //else {
+              //  logger.info("Trying transaction again");
+              //  swapSolForMeme(poolKeys, signature, memeTokenAddr, snipeLaunch);
+            //}
         })
     });
 }
 exports.swapSolForMeme = swapSolForMeme
 
-function swapMemeForSol(poolKeys, signature, tokenBalance) {
+function swapMemeForSol(poolKeys, signature, tokenBalance, memeTokenAddr) {
     return __awaiter(this, void 0, void 0, function* () {
         const ownerAddress = config_1.ownerAddress;
-        const inputToken = new raydium_sdk_1.Token(raydium_sdk_1.TOKEN_PROGRAM_ID, new web3.PublicKey(poolKeys.baseMint.toString()), poolKeys.lpDecimals);
+        const inputToken = new raydium_sdk_1.Token(raydium_sdk_1.TOKEN_PROGRAM_ID, new web3.PublicKey(memeTokenAddr), poolKeys.lpDecimals);
         const inputTokenAmount = new raydium_sdk_1.TokenAmount(inputToken, LAMPORTS_PER_SOL * tokenBalance);
         const outputToken = solToken;
-        const slippage = new raydium_sdk_1.Percent(15, 100);
+        const slippage = new raydium_sdk_1.Percent(100, 100);
         const walletTokenAccounts = yield (0, util_1.getWalletTokenAccount)(config_1.connection, config_1.wallet.publicKey);
+        const snipeLaunch = false;
 
         logger.info("Trying to swap Meme for SOL");
 
         swapOnlyAmm({
             poolKeys,
-            tokenAddress: poolKeys.quoteMint.toString(), 
+            tokenAddress: solToken, 
             inputTokenAmount,
             slippage,
             walletTokenAccounts,
@@ -96,43 +110,59 @@ function swapMemeForSol(poolKeys, signature, tokenBalance) {
             outputToken
         }).then(({ txids }) => {
             /** continue with txids */
-            logger.info({'Swap Meme for Sol txids' : [txids]}, "Swap Meme to SOL TxnIDs");
+            logger.info({'Swap Meme for Sol txids' : txids}, "Swap Meme to SOL TxnIDs");
             if(txids.length === 1){
-                soldMemeTokenResult(txids[0], poolKeys, ownerAddress);
+                soldMemeTokenResult(txids[0], poolKeys, ownerAddress, memeTokenAddr);
+            } else if (txids.length > 1) {
+                logger.info("Swap Meme for Sol Block Expired. Retrying Swap.");
+                swapMemeForSol(poolKeys, signature, tokenBalance, memeTokenAddr);
             }
         }).catch(error => {
             //logger.info({"Signatures":[signature]}, "Signatures");
             logger.error(error, "Error swapping Meme for SOL");
-            swapMemeForSol(poolKeys, signature, tokenBalance);
+            //swapMemeForSol(poolKeys, signature, tokenBalance, memeTokenAddr);
         })
     });
 }
 exports.swapMemeForSol = swapMemeForSol
 
 async function getTx(tx){
-    return await connection.getTransaction(tx, {
+    const transaction = await connection.getTransaction(tx, {
         maxSupportedTransactionVersion: 0,
         commitment: "confirmed"
-    })
+    });
+
+    return transaction;
 }
 
 async function getBalances(tx, tokenAddress, ownerAddress){
-    let validTx = await getTx(tx);
-    while(validTx === null){
+    logger.info("Start get balances");
+    let validTx = null;
+    let i = 0;
+
+    do {
+        await new Promise(resolve => setTimeout(resolve, 500));
         validTx = await getTx(tx);
-        if(validTx !== null){
-            for(const account of validTx.meta.postTokenBalances){
-                if(account.mint === tokenAddress && account.owner === ownerAddress){
-                    return account.uiTokenAmount.uiAmount;
-                }
+
+        i++;
+    }
+    while (i < 25 && validTx === null);
+
+    if(validTx !== null){
+        for(const account of validTx.meta.postTokenBalances){
+            if(account.mint === tokenAddress && account.owner === ownerAddress){
+                return account.uiTokenAmount.uiAmount;
             }
         }
+    } else {
+        logger.info({"Tx" : tx}, "Cannot retrieve Tx.");
+        return -99;
     }
 }
 
-async function getTokenPriceInSol(baseVault, quoteVault){
-    const baseVaultAccount = await connection.getTokenAccountBalance(new web3.PublicKey(baseVault));
-    const quoteVaultAccount = await connection.getTokenAccountBalance(new web3.PublicKey(quoteVault));
+async function getTokenPriceInSol(memeTokenAddr, solToken){
+    const baseVaultAccount = await connection.getTokenAccountBalance(new web3.PublicKey(memeTokenAddr));
+    const quoteVaultAccount = await connection.getTokenAccountBalance(new web3.PublicKey(solToken));
     const baseVaultAccountAmount = baseVaultAccount.value.uiAmount;
     const quoteVaultAccountAmount = quoteVaultAccount.value.uiAmount;
     return (quoteVaultAccountAmount / baseVaultAccountAmount);
@@ -140,22 +170,39 @@ async function getTokenPriceInSol(baseVault, quoteVault){
 
 async function soldMemeTokenResult(tx, poolKeys, ownerAddress){
     // Use tx to determine SOL received from selling Meme coin
-    const tokenBalance = await getBalances(tx, poolKeys.quoteMint.toString(), ownerAddress);
+    //const tokenBalance = await getBalances(tx, solToken, ownerAddress);
     logger.info("Sold Meme for SOL");
     //console.log("Sol used to buy Meme" + buyAmtSol + " Sol P/L: WIP");
-    logger.info({"Current SOL Balance" : tokenBalance}, "Current SOL Balance");
+    //logger.info({"Current SOL Balance" : tokenBalance}, "Current SOL Balance");
 }
 
-async function monitorTokenSell(tx, poolKeys, ownerAddress, signature){
-    const tokenBalance = await getBalances(tx, poolKeys.baseMint.toString(), ownerAddress);
-    const buyPrice = (buyAmtSol / tokenBalance);
-    const solPriceUSD = util_1.getSolanaPriceInUSDC();
+async function monitorTokenSell(tx, poolKeys, ownerAddress, signature, memeTokenAddr){
+    //const tokenBalance = await getBalances(tx, memeTokenAddr, ownerAddress);
+    let i = 0;
+    let tokenBalance = -99;
 
-    logger.info({"SOL Price in USD" : solPriceUSD}, "SOL Price in USD");
-    logger.info({"Meme Buy Price" : buyPrice}, "Meme Buy Price");
-    logger.info({"Meme Buy Qty" : tokenBalance}, "Meme Buy Qty");
+    do {
+        await new Promise(resolve => setTimeout(resolve, 500));
+        //tokenBalance = await getBalances(tx, memeTokenAddr, ownerAddress);
+        tokenBalance = await util_1.getWalletMemeTokenBalance(memeTokenAddr);
+
+        i++;
+    }
+    while (i < 25 && tokenBalance === -99);
+
+    if (tokenBalance > -99) {
+        const buyPrice = (buyAmtSol / tokenBalance);
+        const solPriceUSD = await util_1.getSolanaPriceInUSDC();
+
+        logger.info({"SOL Price in USD" : solPriceUSD}, "SOL Price in USD");
+        logger.info({"Meme Buy Price" : buyPrice}, "Meme Buy Price");
+        logger.info({"Meme Buy Qty" : tokenBalance}, "Meme Buy Qty");
+    } else {
+        logger.info("Cannot get token balance after 625 tries. Try to sell 200 tokens to get some money back.");
+        tokenBalance = 200;
+    }
     
-    monitorToken(buyPrice, poolKeys, tokenBalance, signature);
+    monitorToken(buyPrice, poolKeys, tokenBalance, signature, memeTokenAddr);
 }
 
 /*async function monitorTokenSell(tx, tokenAddress, ownerAddress, baseVault, quoteVault){
@@ -164,7 +211,7 @@ async function monitorTokenSell(tx, poolKeys, ownerAddress, signature){
     monitorToken(buyPrice, baseVault, quoteVault, tokenBalance);
 }*/
 
-async function monitorToken(buyPrice, poolKeys, tokenBalance, signature){
+async function monitorToken(buyPrice, poolKeys, tokenBalance, signature, memeTokenAddr){
     let count = 0;
     const maxIntervals = 9;
 
@@ -174,12 +221,12 @@ async function monitorToken(buyPrice, poolKeys, tokenBalance, signature){
             
             // call swap
             logger.info("Time to sell Meme");
-            swapMemeForSol(poolKeys, signature, tokenBalance);
+            swapMemeForSol(poolKeys, signature, tokenBalance, memeTokenAddr);
 
             return;
         }
         /*
-        const currentPrice = await getTokenPriceInSol(poolKeys.baseVault.toString(), poolKeys.quoteVault.toString());
+        const currentPrice = await getTokenPriceInSol(memeTokenAddr, solToken);
         logger.info({"Buy Price" : buyPrice, "Current Price" : currentPrice}, "Buy and Current Price Details");
         const percentIncrease = ((buyPrice - currentPrice) / buyPrice) * 100;
         logger.info({"Percent Change" : percentIncrease}, "Percent Change");
@@ -187,26 +234,3 @@ async function monitorToken(buyPrice, poolKeys, tokenBalance, signature){
         count++;
     }, 5000)
 }
-
-/* async function monitorToken(buyPrice, baseVault, quoteVault, tokenBalance){
-    let count = 0;
-    const maxIntervals = 9;
-
-    let interval = setInterval(async () => {
-        if (count >= maxIntervals) {
-            clearInterval(interval);
-
-            // call swap
-
-
-            return;
-        }
-
-        const currentPrice = await getTokenPriceInSol(baseVault, quoteVault);
-        console.log("buy price: " + buyPrice + " current price: " + currentPrice);
-        const percentIncrease = ((buyPrice - currentPrice) / buyPrice) * 100;
-        console.log("percent increase: " + percentIncrease);
-
-        count++;
-    }, 500)
-} */

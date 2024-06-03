@@ -7,22 +7,108 @@ const { info } = require('console');
 const derivePoolKeys = require('./derivePoolKeys.js');
 const logger = require('../logger.js');
 const swap = require('./swap2.js');
+//const { GetProgramAccountsFilter } = require("@solana/web3.js");
 
 const openbookProgramId = new web3.PublicKey('srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX');
 const connection = config.connection;
 
-//tryCode("3MsMCSEoeuJrrnwAkfepNeC5AsrFkps4zKKFAQSRmKtY");
-//decimalTest("99p7VwKhHsKEmCmEDQFfED27p6FotRJTPNdngyKbqXdo");
-//getSolanaPrice();
+//marketId, Tx, memeTokenAddr
+manualSell("", "", ""); 
 
-//testGetBalances("5tPaEp6uBR7frDav1aTwwK8huLy37wiGaKejQvpqkRWu3eTrQvYr2qG9rhWZCtupcgqGc7EHN9rNFu5kkhsYL7so", "A4AAdnjnpb24TYCQ21T4onp6hFU8BYXinM3EdHZCG46R", config.ownerAddress);
-//getTx("5tPaEp6uBR7frDav1aTwwK8huLy37wiGaKejQvpqkRWu3eTrQvYr2qG9rhWZCtupcgqGc7EHN9rNFu5kkhsYL7so");
-//testSelling("3cCTCRAZQgafj96iLWPtBYEzr5HKdZzzJEW8ThQAyTHc");
+//testTokenPriceInSol("52bscamMwyqkNeqa2L3TR55bNrFL3y8wP4ussAuTpump", config.solToken);
 
-//getLPData("HtsX2mcApcCRAY1e9wREhtPvmXjWxb1hRt6CDzzmQqH3"); //marketId
-manualSell("51v5JvrJToKSUtqht6br9NMSXqWwDjJ7Sm7gTtt4fcUA", "61tkKL1XAMqWfrHjx55SLeqF6jmuFcKBSAm1y9VA1tRBQ329xab5MAeUvZY3qUcn4YTLLQbExSFJRXUDG12T33tf"); //marketId, Tx
 
-async function manualSell(marketId, tx){
+
+async function testTokenPriceInSol(memeTokenAddr, solToken){
+    const price = await getTokenPriceInSol(memeTokenAddr, solToken);
+    logger.info({"Token Price in Sol":price}, "Token price in SOL");
+}
+
+async function getTokenPriceInSol(memeTokenAddr, solToken){
+    const baseVaultAccount = await connection.getTokenAccountBalance(new web3.PublicKey(memeTokenAddr));
+    const quoteVaultAccount = await connection.getTokenAccountBalance(new web3.PublicKey(solToken));
+    const baseVaultAccountAmount = baseVaultAccount.value.uiAmount;
+    const quoteVaultAccountAmount = quoteVaultAccount.value.uiAmount;
+    return (quoteVaultAccountAmount / baseVaultAccountAmount);
+}
+
+async function getMemeTokenBalance(memeTokenAddr){
+    const tokenBalance = await util_1.getWalletMemeTokenBalance(memeTokenAddr);
+    logger.info({"Token Balance":tokenBalance}, "Token Balance");
+}
+
+async function getTokensByOwner(memeTokenAddr){
+    //3y9t7HRU8mJAnU61Hboy4KjTLbUhadYUSjNV2oqyS1Rz
+    //https://www.quicknode.com/guides/solana-development/spl-tokens/how-to-get-all-tokens-held-by-a-wallet-in-solana
+    const filters = [];
+    filters.push(
+        {
+            dataSize: 165, //Size of account (bytes)
+        },
+        {
+            memcmp: {
+                offset: 32, //location of our query in the account (bytes)
+                bytes: config.ownerAddress,
+            }
+        },
+        {
+            memcmp: {
+                offset: 0, //number of bytes
+                bytes: memeTokenAddr, //base58 encoded string
+            }
+        }
+    );
+
+    const accounts = await connection.getParsedProgramAccounts(
+        raydium_sdk_1.TOKEN_PROGRAM_ID,
+        {filters}
+    );
+
+    logger.info({"Found Token Accounts":accounts.length}, "Found token accounts");
+
+    for (let i = 0; i < accounts.length; i++) {
+        //Parse account data
+        const parsedAccountInfo = accounts[i].account.data;
+        const mintAddress = parsedAccountInfo["parsed"]["info"]["mint"];
+        const tokenBalance = parsedAccountInfo["parsed"]["info"]["tokenAmount"]["uiAmount"];
+
+        logger.info({"Token Account":accounts[i].pubkey.toString()}, "Token account address");
+        logger.info({"Token Mint":mintAddress}, "Token address");
+        logger.info({"Token Balance":tokenBalance}, "Token balance");
+    };
+}
+
+async function checkBlockHash(){
+    const START_TIME = new Date();
+        // Get Latest Blockhash
+    const blockhashResponse = await connection.getLatestBlockhashAndContext('finalized');
+    const lastValidHeight = blockhashResponse.value.lastValidBlockHeight;
+    let hashExpired = false;
+
+    hashExpired = await util_1.isBlockhashExpired(connection, lastValidHeight);
+
+    if (hashExpired) {
+        const endTime = new Date();
+        const elapsed = (endTime.getTime() - START_TIME.getTime())/1000;
+        logger.info({"Blockhas has expired. Elapsed Time (seconds)" : elapsed}, "Blockhas has expired");
+    } else {
+        logger.info("Blockhash has not expired.");
+    }
+}
+
+async function errorStringTest(subString){
+    const msg = {"err":{"type":"SendTransactionError","message":"failed to send transaction: Transaction simulation failed: Error processing Instruction 4: custom program error: 0x2a","stack":"Error: failed to send transaction: Transaction simulation failed: Error processing Instruction 4: custom program error: 0x2a\n    at Connection.sendEncodedTransaction (C:\\src\\SOLSniper\\solana-spl-token-sniper\\node_modules\\@solana\\web3.js\\lib\\index.cjs.js:8050:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Connection.sendRawTransaction (C:\\src\\SOLSniper\\solana-spl-token-sniper\\node_modules\\@solana\\web3.js\\lib\\index.cjs.js:8015:20)\n    at async Connection.sendTransaction (C:\\src\\SOLSniper\\solana-spl-token-sniper\\node_modules\\@solana\\web3.js\\lib\\index.cjs.js:7972:14)","logs":["Program 11111111111111111111111111111111 invoke [1]","Program 11111111111111111111111111111111 success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]","Program log: Instruction: InitializeAccount","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3443 of 1399850 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program 11111111111111111111111111111111 invoke [1]","Program 11111111111111111111111111111111 success","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]","Program log: Instruction: InitializeAccount","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3443 of 1396257 compute units","Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success","Program 675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8 invoke [1]","Program log: Error: User token input does not match amm","Program 675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8 consumed 12520 of 1392814 compute units","Program 675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8 failed: custom program error: 0x2a"]}};
+
+    if (msg.err.message && msg.err.message.includes(subString)){
+        logger.info("skip token");
+    } else {
+        logger.info("something else is wrong");
+    }
+}
+
+async function manualSell(marketId, tx, memeTokenAddr){
+    logger.info("Starting manual sell");
+
     const keyData = await connection.getAccountInfo(new web3.PublicKey(marketId));
     if (keyData !== null) {
         logger.info("Market Key Data Retrieved");
@@ -47,13 +133,19 @@ async function manualSell(marketId, tx){
     const tokenBalance = await getBalances(tx, poolKeys.baseMint.toString(), config.ownerAddress);
     if (tokenBalance !== null){
         logger.info("Token Balance Retrieved");
+        logger.info({"Token Balance":tokenBalance}, "Token Balance");
     } else {
         logger.info("Token Balance Retrieval Error");
     }
 
-    // call swap
-    logger.info("Time to sell Meme");
-    swap.swapMemeForSol(poolKeys, signature, tokenBalance);
+    if (tokenBalance){
+        // call swap
+        logger.info("Time to sell Meme");
+        swap.swapMemeForSol(poolKeys, signature, tokenBalance, memeTokenAddr);
+    } else {
+        logger.info("Token Balance is null. Cannot sell");
+    }
+    
 }
 
 async function testSelling(marketId){
@@ -123,10 +215,10 @@ async function testGetBalances(tx, tokenAddress, ownerAddress){
     const buyPrice = (config.amtBuySol / tokenBalance);
     logger.info({"Meme Buy Price" : buyPrice}, "Meme Buy Price");
     logger.info({"Meme Buy Qty" : tokenBalance}, "Meme Buy Qty");
-    //logger.info({"Token Balance":tokenBalance}, "Token Balance");
+    logger.info({"Token Balance":tokenBalance}, "Token Balance");
 }
 
-async function monitorToken(buyPrice, poolKeys, tokenBalance, signature){
+async function monitorToken(buyPrice, poolKeys, tokenBalance, signature, memeTokenAddr){
     let count = 0;
     const maxIntervals = 9;
 
@@ -155,6 +247,7 @@ async function monitorToken(buyPrice, poolKeys, tokenBalance, signature){
     }, 5000)
 }
 
+/*
 async function getTokenPriceInSol(baseVault, quoteVault){
     const baseVaultAccount = await connection.getTokenAccountBalance(new web3.PublicKey(baseVault));
     const quoteVaultAccount = await connection.getTokenAccountBalance(new web3.PublicKey(quoteVault));
@@ -162,7 +255,7 @@ async function getTokenPriceInSol(baseVault, quoteVault){
     const quoteVaultAccountAmount = quoteVaultAccount.value.uiAmount;
     return (quoteVaultAccountAmount / baseVaultAccountAmount);
 }
-
+*/
 async function soldMemeTokenResult(tx, poolKeys, ownerAddress){
     // Use tx to determine SOL received from selling Meme coin
     const tokenBalance = await getBalances(tx, poolKeys.quoteMint.toString(), ownerAddress);
@@ -171,8 +264,9 @@ async function soldMemeTokenResult(tx, poolKeys, ownerAddress){
     logger.info({"Current SOL Balance" : tokenBalance}, "Current SOL Balance");
 }
 
-async function monitorTokenSell(tx, poolKeys, ownerAddress, signature){
-    const tokenBalance = await getBalances(tx, poolKeys.baseMint.toString(), ownerAddress);
+async function monitorTokenSell(tx, poolKeys, ownerAddress, signature, memeTokenAddr){
+    //const tokenBalance = await getBalances(tx, poolKeys.baseMint.toString(), ownerAddress);
+    const tokenBalance = await util_1.getWalletMemeTokenBalance(memeTokenAddr);
     if (tokenBalance !== null){
         logger.info("Token Balance Retrieved");
     } else {
@@ -180,18 +274,18 @@ async function monitorTokenSell(tx, poolKeys, ownerAddress, signature){
     }
     
     const buyPrice = (config.amtBuySol / tokenBalance);
-    const solPriceUSD = util_1.getSolanaPriceInUSDC();
+    const solPriceUSD = await util_1.getSolanaPriceInUSDC();
     if (solPriceUSD !== null){
         logger.info("SOL Price Retrieved");
     } else {
         logger.info("SOL Price Retrieval Error");
     }
-
+    
+    logger.info({"SOL Price in USD" : solPriceUSD}, "SOL Price in USD");
     logger.info({"Meme Buy Price" : buyPrice}, "Meme Buy Price");
     logger.info({"Meme Buy Qty" : tokenBalance}, "Meme Buy Qty");
-    //Console.log("Buy: ")
-
-    monitorToken(buyPrice, poolKeys, tokenBalance, signature);
+    
+    monitorToken(buyPrice, poolKeys, tokenBalance, signature, memeTokenAddr);
 }
 
 async function getTx(tx){
@@ -203,7 +297,7 @@ async function getTx(tx){
     const transaction = await connection.getTransaction(tx, {
         maxSupportedTransactionVersion: 0,
         commitment: "confirmed"
-    })
+    });
 
     /*const transaction = await connection.getParsedTransaction(
         tx,
@@ -216,34 +310,28 @@ async function getTx(tx){
 
 async function getBalances(tx, tokenAddress, ownerAddress){
     logger.info("Start get balances");
-    let validTx = await getTx(tx);
+    let validTx = null;
+    let i = 0;
+
+    do {
+        await new Promise(resolve => setTimeout(resolve, 500));
+        validTx = await getTx(tx);
+
+        i++;
+    }
+    while (i < 15 && validTx === null);
 
     if(validTx !== null){
-        //logger.info("validTx not NULL");
+        logger.info({"validTx":[validTx]}, "Valid Tx");
         for(const account of validTx.meta.postTokenBalances){
             if(account.mint === tokenAddress && account.owner === ownerAddress){
                 return account.uiTokenAmount.uiAmount;
             }
         }
     } else {
-        logger.info("validTx still NULL");
+        logger.info({"Tx" : tx}, "Cannot retrieve Tx.");
         return 0;
     }
-
-    /*logger.info("ValidTx before while");
-    while(validTx === null){
-        logger.info("validTx inside while 1");
-        validTx = await getTx(tx);
-        logger.info("validTx inside while 2");
-        if(validTx !== null){
-            logger.info("validTx not NULL");
-            for(const account of validTx.meta.postTokenBalances){
-                if(account.mint === tokenAddress && account.owner === ownerAddress){
-                    return account.uiTokenAmount.uiAmount;
-                }
-            }
-        }
-    }*/
 }
 
 async function getSolanaPrice(){
