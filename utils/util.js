@@ -9,11 +9,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.sleepTime = exports.getATAAddress = exports.buildAndSendTx = exports.getWalletTokenAccount = exports.sendTx = exports.isBlockhashExpired = exports.getTokensByOwner = exports.getWalletMemeTokenBalance = void 0;
+exports.sleepTime = exports.getATAAddress = exports.buildAndSendTx = exports.getWalletTokenAccount = exports.sendTx = exports.isBlockhashExpired = exports.getTokensByOwner = exports.getWalletMemeTokenBalance = exports.buildAndSendOptimalTransaction = exports.sendOptimalTransaction = void 0;
 const raydium_sdk_1 = require("@raydium-io/raydium-sdk");
 const web3_js_1 = require("@solana/web3.js");
 const config_1 = require("./config");
 const logger = require('../logger.js');
+const { getSimulationComputeUnits } = require("@solana-developers/helpers");
 
 function sendTx(connection, payer, txs, options) {
     return __awaiter(this, void 0, void 0, function* () {
@@ -90,6 +91,92 @@ function buildAndSendTx(innerSimpleV0Transaction, options) {
     });
 }
 exports.buildAndSendTx = buildAndSendTx;
+
+function buildAndSendOptimalTransaction(instructions, options) {
+    return __awaiter(this, void 0, void 0, function* () {
+        logger.info({"Instructions passed in":instructions}, "Passed in instructions");
+        
+        // Get optimal priority fees - https://solana.com/developers/guides/advanced/how-to-use-priority-fees
+        const microLamports = 300;
+        const units = yield getSimulationComputeUnits(config_1.connection, instructions, new web3_js_1.PublicKey(config_1.ownerAddress), config_1.addLookupTableInfo);
+        const blockhashResponse = yield connection.getLatestBlockhashAndContext('finalized');
+
+        instructions.unshift(web3_js_1.ComputeBudgetProgram.setComputeUnitPrice(microLamports));
+
+        if (units) {
+            //Add 10% to units to cover cases where the actual cost is more than simulated
+            const unitsWithMargin = units + (units * 0.1);
+            instructions.unshift(web3_js_1.ComputeBudgetProgram.setComputeUnitLimit(unitsWithMargin));
+        }
+
+        const transactionMessage = new web3_js_1.transactionMessage(instructions, blockhashResponse.blockhash, config_1.ownerAddress).compileToV0Message(config_1.addLookupTableInfo);
+        const transaction = new web3_js_1.VersionedTransaction(transactionMessage, blockhashResponse);
+
+        return yield sendOptimalTransaction(transaction, blockhashResponse);
+    });
+}
+exports.buildAndSendOptimalTransaction = buildAndSendOptimalTransaction;
+
+function sendOptimalTransaction(transaction, blockhashResponse) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const START_TIME = new Date();
+        // Get Latest Blockhash
+        const lastValidHeight = blockhashResponse.value.lastValidBlockHeight;
+
+        options = {skipPreflight: true, maxRetries: 20};
+
+        const txids = [];
+        for (const iTx of txs) {
+            if (iTx instanceof web3_js_1.VersionedTransaction) {
+                iTx.sign([payer]);
+                txids.push(yield connection.sendTransaction(iTx, options));
+            }
+            else {
+                txids.push(yield connection.sendTransaction(iTx, [payer], options));
+            }
+        }
+        logger.info({"SendTX Start Time":START_TIME,"End Time":new Date().getTime()}, "SendTX start and end time");
+        logger.info({"Attempted Tx" : txids}, "Attempted Tx IDs");
+
+        // Check transaction status and blockhash status until the transaction succeeds or blockhash expires
+        let hashExpired = false;
+        let txSuccess = false;
+        logger.info("Start tx success or blockhash expired check.");
+        while (!hashExpired && !txSuccess) {
+            const { value: status } = yield connection.getSignatureStatus(txids[0]);
+    
+            // Break loop if transaction has succeeded
+            if (status && ((status.confirmationStatus === 'confirmed' || status.confirmationStatus === 'finalized'))) {
+                txSuccess = true;
+                const endTime = new Date();
+                const elapsed = (endTime.getTime() - START_TIME.getTime())/1000;
+                logger.info({"Tx Success. Elapsed Time (seconds)" : elapsed}, "Tx Success");
+                //console.log(`https://explorer.solana.com/tx/${txId}?cluster=devnet`);
+                
+                break;
+            }
+    
+            hashExpired = yield isBlockhashExpired(connection, lastValidHeight);
+            
+            // Break loop if blockhash has expired
+            if (hashExpired) {
+                const endTime = new Date();
+                const elapsed = (endTime.getTime() - START_TIME.getTime())/1000;
+                logger.info({"Blockhash has expired. Elapsed Time (seconds)" : elapsed}, "Blockhash has expired");
+                
+                txids.push("expired");
+                // (add your own logic to Fetch a new blockhash and resend the transaction or throw an error)
+                break;
+            }
+    
+            // Check again after 2.5 sec
+            yield sleepTime(500);
+        }
+
+        return txids; 
+    });
+}
+exports.sendOptimalTransaction = sendOptimalTransaction;
 
 function isBlockhashExpired(connection, lastValidBlockHeight) {
     return __awaiter(this, void 0, void 0, function* () {

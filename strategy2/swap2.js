@@ -38,7 +38,8 @@ function swapOnlyAmm(input) {
             fixedSide: 'in',
             makeTxVersion: config_1.makeTxVersion,
         });
-        return { txids: yield (0, util_1.buildAndSendTx)(innerTransactions) };
+        //return { txids: yield (0, util_1.buildAndSendTx)(innerTransactions) };
+        return { txids: yield (0, util_1.buildAndSendOptimalTransaction)(innerTransactions) };
     });
 }
 

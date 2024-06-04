@@ -7,17 +7,29 @@ const { info } = require('console');
 const derivePoolKeys = require('./derivePoolKeys.js');
 const logger = require('../logger.js');
 const swap = require('./swap2.js');
+const bs58 = require('bs58');
 //const { GetProgramAccountsFilter } = require("@solana/web3.js");
 
 const openbookProgramId = new web3.PublicKey('srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX');
 const connection = config.connection;
 
 //marketId, Tx, memeTokenAddr
-manualSell("", "", ""); 
-
+//manualSell("", "", ""); 
+//recentPrioritizationFee('HgZC3mzFwiavbiWd5cx3KqAoD7YyDZGiG9msbqZh1e7L');//raydium_sdk_1.TOKEN_PROGRAM_ID);
 //testTokenPriceInSol("52bscamMwyqkNeqa2L3TR55bNrFL3y8wP4ussAuTpump", config.solToken);
+base58test();
+async function base58test() {
+    if (config.ownerAddress){
+        logger.info({"owner address": new web3.PublicKey(config.ownerAddress)}, "Owner address");
+    } else {
+        logger.includes("Error with owner address");
+    }
+}
 
-
+async function recentPrioritizationFee(programAddr) {
+    const recentFee = await connection.getRecentPrioritizationFees(programAddr);
+    logger.info({"Recent Fee":recentFee}, "Recent Fee");
+}
 
 async function testTokenPriceInSol(memeTokenAddr, solToken){
     const price = await getTokenPriceInSol(memeTokenAddr, solToken);
