@@ -13,44 +13,44 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const assert_1 = __importDefault(require("assert"));
-const raydium_sdk_1 = require("@raydium-io/raydium-sdk");
-const config_1 = require("../utils/config.js");
-const util_1 = require("../utils/util.js");
+const raydium = require("@raydium-io/raydium-sdk");
+const config = require("../utils/config.js");
+const util = require("../utils/util.js");
 const { LAMPORTS_PER_SOL } = require("@solana/web3.js");
 const web3 = require("@solana/web3.js");
 const logger = require('../logger.js');
-const connection = config_1.connection;
-const buyAmtSol = config_1.amtBuySol;
-const solToken = config_1.solToken;
+const connection = config.connection;
+const buyAmtSol = config.amtBuySol;
+const solToken = config.solToken;
 
 function swapOnlyAmm(input) {
     return __awaiter(this, void 0, void 0, function* () {
         //const outputToken = new raydium_sdk_1.Token(raydium_sdk_1.TOKEN_PROGRAM_ID, new web3.PublicKey(input.tokenAddress), input.poolKeys.lpDecimals);
-        const { innerTransactions } = yield raydium_sdk_1.Liquidity.makeSwapInstructionSimple({
-            connection: config_1.connection,
+        const { innerTransactions } = yield raydium.Liquidity.makeSwapInstructionSimple({
+            connection: config.connection,
             poolKeys: input.poolKeys,
             userKeys: {
                 tokenAccounts: input.walletTokenAccounts,
                 owner: input.wallet.publicKey,
             },
             amountIn: input.inputTokenAmount,
-            amountOut: new raydium_sdk_1.TokenAmount(input.outputToken, 1),
+            amountOut: new raydium.TokenAmount(input.outputToken, 1),
             fixedSide: 'in',
-            makeTxVersion: config_1.makeTxVersion,
+            makeTxVersion: config.makeTxVersion,
         });
         //return { txids: yield (0, util_1.buildAndSendTx)(innerTransactions) };
-        return { txids: yield (0, util_1.buildAndSendOptimalTransaction)(innerTransactions) };
+        return { txids: yield (0, util.buildAndSendOptimalTransaction)(innerTransactions) };
     });
 }
 
 function swapSolForMeme(poolKeys, signature, memeTokenAddr, snipeLaunch) {
     return __awaiter(this, void 0, void 0, function* () {
-        const ownerAddress = config_1.ownerAddress;
+        const ownerAddress = config.ownerAddress;
         const inputToken = solToken;
-        const inputTokenAmount = new raydium_sdk_1.TokenAmount(inputToken, LAMPORTS_PER_SOL * buyAmtSol);
-        const outputToken = new raydium_sdk_1.Token(raydium_sdk_1.TOKEN_PROGRAM_ID, new web3.PublicKey(memeTokenAddr), poolKeys.lpDecimals);
-        const slippage = new raydium_sdk_1.Percent(100, 100);
-        const walletTokenAccounts = yield (0, util_1.getWalletTokenAccount)(config_1.connection, config_1.wallet.publicKey);
+        const inputTokenAmount = new raydium.TokenAmount(inputToken, LAMPORTS_PER_SOL * buyAmtSol);
+        const outputToken = new raydium.Token(raydium.TOKEN_PROGRAM_ID, new web3.PublicKey(memeTokenAddr), poolKeys.lpDecimals);
+        const slippage = new raydium.Percent(100, 100);
+        const walletTokenAccounts = yield (0, util.getWalletTokenAccount)(config.connection, config.wallet.publicKey);
 
         swapOnlyAmm({
             poolKeys,
@@ -58,7 +58,7 @@ function swapSolForMeme(poolKeys, signature, memeTokenAddr, snipeLaunch) {
             inputTokenAmount,
             slippage,
             walletTokenAccounts,
-            wallet: config_1.wallet,
+            wallet: config.wallet,
             outputToken
         }).then(({ txids }) => {
             /** continue with txids */
@@ -91,12 +91,12 @@ exports.swapSolForMeme = swapSolForMeme
 
 function swapMemeForSol(poolKeys, signature, tokenBalance, memeTokenAddr) {
     return __awaiter(this, void 0, void 0, function* () {
-        const ownerAddress = config_1.ownerAddress;
-        const inputToken = new raydium_sdk_1.Token(raydium_sdk_1.TOKEN_PROGRAM_ID, new web3.PublicKey(memeTokenAddr), poolKeys.lpDecimals);
-        const inputTokenAmount = new raydium_sdk_1.TokenAmount(inputToken, LAMPORTS_PER_SOL * tokenBalance);
+        const ownerAddress = config.ownerAddress;
+        const inputToken = new raydium.Token(raydium.TOKEN_PROGRAM_ID, new web3.PublicKey(memeTokenAddr), poolKeys.lpDecimals);
+        const inputTokenAmount = new raydium.TokenAmount(inputToken, LAMPORTS_PER_SOL * tokenBalance);
         const outputToken = solToken;
-        const slippage = new raydium_sdk_1.Percent(100, 100);
-        const walletTokenAccounts = yield (0, util_1.getWalletTokenAccount)(config_1.connection, config_1.wallet.publicKey);
+        const slippage = new raydium.Percent(100, 100);
+        const walletTokenAccounts = yield (0, util.getWalletTokenAccount)(config.connection, config.wallet.publicKey);
         const snipeLaunch = false;
 
         logger.info("Trying to swap Meme for SOL");
@@ -107,7 +107,7 @@ function swapMemeForSol(poolKeys, signature, tokenBalance, memeTokenAddr) {
             inputTokenAmount,
             slippage,
             walletTokenAccounts,
-            wallet: config_1.wallet,
+            wallet: config.wallet,
             outputToken
         }).then(({ txids }) => {
             /** continue with txids */
@@ -185,7 +185,7 @@ async function monitorTokenSell(tx, poolKeys, ownerAddress, signature, memeToken
     do {
         await new Promise(resolve => setTimeout(resolve, 500));
         //tokenBalance = await getBalances(tx, memeTokenAddr, ownerAddress);
-        tokenBalance = await util_1.getWalletMemeTokenBalance(memeTokenAddr);
+        tokenBalance = await util.getWalletMemeTokenBalance(memeTokenAddr);
 
         i++;
     }
@@ -193,7 +193,7 @@ async function monitorTokenSell(tx, poolKeys, ownerAddress, signature, memeToken
 
     if (tokenBalance > -99) {
         const buyPrice = (buyAmtSol / tokenBalance);
-        const solPriceUSD = await util_1.getSolanaPriceInUSDC();
+        const solPriceUSD = await util.getSolanaPriceInUSDC();
 
         logger.info({"SOL Price in USD" : solPriceUSD}, "SOL Price in USD");
         logger.info({"Meme Buy Price" : buyPrice}, "Meme Buy Price");

@@ -10,11 +10,36 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.sleepTime = exports.getATAAddress = exports.buildAndSendTx = exports.getWalletTokenAccount = exports.sendTx = exports.isBlockhashExpired = exports.getTokensByOwner = exports.getWalletMemeTokenBalance = exports.buildAndSendOptimalTransaction = exports.sendOptimalTransaction = void 0;
-const raydium_sdk_1 = require("@raydium-io/raydium-sdk");
-const web3_js_1 = require("@solana/web3.js");
-const config_1 = require("./config");
+const raydium = require("@raydium-io/raydium-sdk");
+const web3 = require("@solana/web3.js");
+const config = require("./config");
 const logger = require('../logger.js');
 const { getSimulationComputeUnits } = require("@solana-developers/helpers");
+
+// Token program errors
+// https://github.com/solana-labs/solana-program-library/blob/master/token/program/src/error.rs
+const tokenProgramErrors = [
+    "Lamport balance below rent-exempt threshold",
+    "Insufficient funds",
+    "Invalid Mint",
+    "Account not associated with this Mint",
+    "Owner does not match",
+    "Fixed supply",
+    "Already in use",
+    "Invalid number of provided signers",
+    "Invalid number of required signers",
+    "State is unititialized",
+    "Instruction does not support native tokens",
+    "Non-native account can only be closed if its balance is zero",
+    "Invalid instruction",
+    "State is invalid for requested operation",
+    "Operation overflowed",
+    "Account does not support specified authority type",
+    "This token mint cannot freeze accounts",
+    "Account is frozen",
+    "The provided decimals value different from the Mint decimals",
+    "Instruction does not support non-native tokens",
+];
 
 function sendTx(connection, payer, txs, options) {
     return __awaiter(this, void 0, void 0, function* () {
@@ -27,7 +52,7 @@ function sendTx(connection, payer, txs, options) {
 
         const txids = [];
         for (const iTx of txs) {
-            if (iTx instanceof web3_js_1.VersionedTransaction) {
+            if (iTx instanceof web3.VersionedTransaction) {
                 iTx.sign([payer]);
                 txids.push(yield connection.sendTransaction(iTx, options));
             }
@@ -80,37 +105,41 @@ exports.sendTx = sendTx;
 
 function buildAndSendTx(innerSimpleV0Transaction, options) {
     return __awaiter(this, void 0, void 0, function* () {
-        const willSendTx = yield (0, raydium_sdk_1.buildSimpleTransaction)({
-            connection: config_1.connection,
-            makeTxVersion: config_1.makeTxVersion,
-            payer: config_1.wallet.publicKey,
+        const willSendTx = yield (0, raydium.buildSimpleTransaction)({
+            connection: config.connection,
+            makeTxVersion: config.makeTxVersion,
+            payer: config.wallet.publicKey,
             innerTransactions: innerSimpleV0Transaction,
-            addLookupTableInfo: config_1.addLookupTableInfo,
+            addLookupTableInfo: config.addLookupTableInfo,
         });
-        return yield sendTx(config_1.connection, config_1.wallet, willSendTx, options);
+        return yield sendTx(config.connection, config.wallet, willSendTx, options);
     });
 }
 exports.buildAndSendTx = buildAndSendTx;
 
-function buildAndSendOptimalTransaction(instructions, options) {
+function buildAndSendOptimalTransaction(swapTransaction) {
     return __awaiter(this, void 0, void 0, function* () {
-        logger.info({"Instructions passed in":instructions}, "Passed in instructions");
+        logger.info({"Instructions passed in":swapTransaction}, "Passed in instructions");
         
         // Get optimal priority fees - https://solana.com/developers/guides/advanced/how-to-use-priority-fees
         const microLamports = 300;
-        const units = yield getSimulationComputeUnits(config_1.connection, instructions, new web3_js_1.PublicKey(config_1.ownerAddress), config_1.addLookupTableInfo);
+        //const instructionsParsed = JSON.parse(swapTransaction);
+        //const instructions = instructionsParsed.instructions;
+
+        const units = yield getSimulationComputeUnits(config.connection, swapTransaction.instructions, config.wallet.publicKey);
         const blockhashResponse = yield connection.getLatestBlockhashAndContext('finalized');
 
-        instructions.unshift(web3_js_1.ComputeBudgetProgram.setComputeUnitPrice(microLamports));
+        instructions.unshift(web3.ComputeBudgetProgram.setComputeUnitPrice(microLamports));
 
         if (units) {
             //Add 10% to units to cover cases where the actual cost is more than simulated
             const unitsWithMargin = units + (units * 0.1);
-            instructions.unshift(web3_js_1.ComputeBudgetProgram.setComputeUnitLimit(unitsWithMargin));
+            instructions.unshift(web3.ComputeBudgetProgram.setComputeUnitLimit(unitsWithMargin));
         }
 
-        const transactionMessage = new web3_js_1.transactionMessage(instructions, blockhashResponse.blockhash, config_1.ownerAddress).compileToV0Message(config_1.addLookupTableInfo);
-        const transaction = new web3_js_1.VersionedTransaction(transactionMessage, blockhashResponse);
+        const transactionMessage = new web3.transactionMessage(instructions, blockhashResponse.blockhash, config.ownerAddress).compileToV0Message(config.addLookupTableInfo);
+        
+        const transaction = new web3.VersionedTransaction(transactionMessage, blockhashResponse);
 
         return yield sendOptimalTransaction(transaction, blockhashResponse);
     });
@@ -127,7 +156,7 @@ function sendOptimalTransaction(transaction, blockhashResponse) {
 
         const txids = [];
         for (const iTx of txs) {
-            if (iTx instanceof web3_js_1.VersionedTransaction) {
+            if (iTx instanceof web3.VersionedTransaction) {
                 iTx.sign([payer]);
                 txids.push(yield connection.sendTransaction(iTx, options));
             }
@@ -201,7 +230,7 @@ function getWalletMemeTokenBalance(memeTokenAddr) {
             {
                 memcmp: {
                     offset: 32, //location of our query in the account (bytes)
-                    bytes: config_1.ownerAddress,
+                    bytes: config.ownerAddress,
                 }
             },
             {
@@ -212,8 +241,8 @@ function getWalletMemeTokenBalance(memeTokenAddr) {
             }
         );
 
-        const accounts = yield config_1.connection.getParsedProgramAccounts(
-            raydium_sdk_1.TOKEN_PROGRAM_ID,
+        const accounts = yield config.connection.getParsedProgramAccounts(
+            raydium.TOKEN_PROGRAM_ID,
             {filters}
         );
 
@@ -245,7 +274,7 @@ function getTokensByOwner(memeTokenAddr) {
             {
                 memcmp: {
                     offset: 32, //location of our query in the account (bytes)
-                    bytes: config_1.ownerAddress,
+                    bytes: config.ownerAddress,
                 }
             },
             {
@@ -256,8 +285,8 @@ function getTokensByOwner(memeTokenAddr) {
             }
         );
 
-        const accounts = yield config_1.connection.getParsedProgramAccounts(
-            raydium_sdk_1.TOKEN_PROGRAM_ID,
+        const accounts = yield config.connection.getParsedProgramAccounts(
+            raydium.TOKEN_PROGRAM_ID,
             {filters}
         );
 
@@ -280,29 +309,29 @@ exports.getTokensByOwner = getTokensByOwner;
 function getWalletTokenAccount(connection, wallet) {
     return __awaiter(this, void 0, void 0, function* () {
         const walletTokenAccount = yield connection.getTokenAccountsByOwner(wallet, {
-            programId: raydium_sdk_1.TOKEN_PROGRAM_ID,
+            programId: raydium.TOKEN_PROGRAM_ID,
         });
         return walletTokenAccount.value.map((i) => ({
             pubkey: i.pubkey,
             programId: i.account.owner,
-            accountInfo: raydium_sdk_1.SPL_ACCOUNT_LAYOUT.decode(i.account.data),
+            accountInfo: raydium.SPL_ACCOUNT_LAYOUT.decode(i.account.data),
         }));
     });
 }
 exports.getWalletTokenAccount = getWalletTokenAccount;
 
 function getATAAddress(programId, owner, mint) {
-    const { publicKey, nonce } = (0, raydium_sdk_1.findProgramAddress)([owner.toBuffer(), programId.toBuffer(), mint.toBuffer()], new web3_js_1.PublicKey("ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"));
+    const { publicKey, nonce } = (0, raydium.findProgramAddress)([owner.toBuffer(), programId.toBuffer(), mint.toBuffer()], new web3.PublicKey("ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL"));
     return { publicKey, nonce };
 }
 exports.getATAAddress = getATAAddress;
 
 function getSolanaPriceInUSDC() {
     return __awaiter(this, void 0, void 0, function* () {
-        const accountInfo = yield config_1.connection.getAccountInfo(new web3_js_1.PublicKey("8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj"));
+        const accountInfo = yield config.connection.getAccountInfo(new web3.PublicKey("8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj"));
 
-        const poolData = raydium_sdk_1.PoolInfoLayout.decode(accountInfo.data);
-        const priceInUSDC = raydium_sdk_1.SqrtPriceMath.sqrtPriceX64ToPrice(poolData.sqrtPriceX64, poolData.mintDecimalsA, poolData.mintDecimalsB).toFixed(2);
+        const poolData = raydium.PoolInfoLayout.decode(accountInfo.data);
+        const priceInUSDC = raydium.SqrtPriceMath.sqrtPriceX64ToPrice(poolData.sqrtPriceX64, poolData.mintDecimalsA, poolData.mintDecimalsB).toFixed(2);
         logger.info({"current price" : priceInUSDC}, "Current SOL Price in USD");
 
         return priceInUSDC;
@@ -312,7 +341,7 @@ exports.getSolanaPriceInUSDC = getSolanaPriceInUSDC;
 
 function checkMintAuthorityRevoked(tokenAddress) {
     return __awaiter(this, void 0, void 0, function* () {
-        const tokenInfo = yield config_1.connection.getParsedAccountInfo(new web3_js_1.PublicKey(tokenAddress));
+        const tokenInfo = yield config.connection.getParsedAccountInfo(new web3.PublicKey(tokenAddress));
         //console.log("tokenInfo: ", tokenInfo);
         //console.log("data parsed: ", tokenInfo.value.data.parsed);
         //console.log("mint authority revoked check: ", tokenInfo.value.data.parsed.info.mintAuthority);
